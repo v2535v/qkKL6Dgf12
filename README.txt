@@ -1,1 +1,1 @@
-LSPipeline工程里面缺少一个dll文件， oraociei11.dll,是因为这个文件太大了，运行lspipeline的时候需要添加一下这个dll文件
+LSPipeline工程里面缺少一个dll文件， oraociei11.dll,是因为这个文件太大了，这个文件主要是在链接oracle的时候使用的，需要使用链接oracle的功能时需要自己添加一下这个dll文件。
