@@ -1,0 +1,1 @@
+LSPipeline工程里面缺少一个dll文件， oraociei11.dll,是因为这个文件太大了，运行lspipeline的时候需要添加一下这个dll文件
