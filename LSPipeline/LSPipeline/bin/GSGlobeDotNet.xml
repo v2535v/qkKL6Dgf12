@@ -1,0 +1,5694 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "GSGlobeDotNet"
+    </assembly>
+    <members>
+        <member name="T:GeoScene.Globe.GSOFeatureLayer">
+            <summary>
+要素图层
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DControl.InitializeComponent">
+            <summary>
+Required method for Designer support - do not modify
+the contents of this method with the code editor.
+</summary>
+        </member>
+        <member name="F:GeoScene.Globe.GSOPlane3DControl.components">
+            <summary>
+Required designer variable.
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DControl.Dispose">
+            <summary>
+Clean up any resources being used.
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOGlobe">
+            <summary>
+Summary for GSOPlane3DControl
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoScreenObj.Offset">
+            <summary>
+位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipse.YRadius">
+            <summary>
+短轴
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipse.XRadius">
+            <summary>
+长轴
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipse.Slices">
+            <summary>
+片数
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoCircle.Clone">
+            <summary>
+复制标注
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoCircle.Slices">
+            <summary>
+片数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoCircle.Radius">
+            <summary>
+半径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoCircle">
+            <summary>
+标注
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoRegularPolygon.Clone">
+            <summary>
+复制标注
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRegularPolygon.Position">
+            <summary>
+位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPages.Length">
+            <summary>
+动画页数量
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAnimationPages">
+            <summary>
+动画页集合
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAnimationPage.Pause">
+            <summary>
+暂停播放
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAnimationPage.Stop">
+            <summary>
+停止播放
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAnimationPage.Play">
+            <summary>
+播放
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAnimationPage.RePlay">
+            <summary>
+重复播放
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.IsPlaying">
+            <summary>
+是否正在播放
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.IsActive">
+            <summary>
+是否激活
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.FPS">
+            <summary>
+播放帧率
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.CurFrame">
+            <summary>
+当前帧
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.FrameCount">
+            <summary>
+帧数
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.RepeatCount">
+            <summary>
+重复次数
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.Name">
+            <summary>
+名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.ObjTimeLineCount">
+            <summary>
+时间轴数量
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAnimationPage.BreakPointCount">
+            <summary>
+断点数量
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAnimationPage">
+            <summary>
+动画关键帧
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniObjTimeLine.IsActive">
+            <summary>
+是否激活
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniObjTimeLine.Name">
+            <summary>
+名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniObjTimeLine.KeyFrameCount">
+            <summary>
+时间轴的关键帧数目
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniObjTimeLine.AniObject">
+            <summary>
+时间轴的动态对象
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAniObjTimeLine">
+            <summary>
+动画时间轴
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniKeyFrame.EffectCount">
+            <summary>
+效果数量
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniKeyFrame.Frame">
+            <summary>
+关键帧所在的帧
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniKeyFrame.PosType">
+            <summary>
+关键帧的位置类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAniKeyFrame">
+            <summary>
+动画关键帧
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniObjGroup.Item(System.Int32)">
+            <summary>
+按索引值获取单元
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAniObjGroup">
+            <summary>
+动画对象组
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniBreakPoint.Duration">
+            <summary>
+断点持续时间
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniBreakPoint.Frame">
+            <summary>
+断点所在的帧
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAniBreakPoint">
+            <summary>
+动画断点
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniAudio.AudioPath">
+            <summary>
+声音路径
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniTerrain.Terrain">
+            <summary>
+地形
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniFeature.Feature">
+            <summary>
+要素
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniLayer.Layer">
+            <summary>
+图层
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAniObject.Clone">
+            <summary>
+克隆效果
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAniObject.Copy(GeoScene.Globe.GSOAniObject)">
+            <summary>
+拷贝效果
+</summary>
+            <param name="style">要拷贝的动画对象</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniObject.Type">
+            <summary>
+类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAniObject">
+            <summary>
+动画效果
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectCameraStateChange.EndState">
+            <summary>
+初始状态
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectCameraStateChange.StartState">
+            <summary>
+初始状态
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectClipGrow.ClipAngle">
+            <summary>
+察除角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectLineGrow.ActorDirAlongLine">
+            <summary>
+沿线对象方向是不是也要沿线
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectLineGrow.GrowByLen">
+            <summary>
+线增长是以长度的百分比增长还是以点数目的百分比增长
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectLineGrow.ActorRotation">
+            <summary>
+角色旋转
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectLineGrow.ActorFeature">
+            <summary>
+角色要素
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectValueChange.EndValue">
+            <summary>
+终止值
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectValueChange.StartValue">
+            <summary>
+起始值
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectRoute.Route">
+            <summary>
+标签
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectLabelChange.Label">
+            <summary>
+标签
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectExtrudeStyleChange.EndExtrudeStyle">
+            <summary>
+终止拉伸风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectExtrudeStyleChange.StartExtrudeStyle">
+            <summary>
+起始拉伸风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectStyleChange.EndStyle">
+            <summary>
+终止风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectStyleChange.StartStyle">
+            <summary>
+起始风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectTimeChange.EndTime">
+            <summary>
+终止时间
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectTimeChange.StartTime">
+            <summary>
+起始时间
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectTimeChange.RealTimeUsed">
+            <summary>
+是否使用当前时间
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectScale.EndScale">
+            <summary>
+终止缩放
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectScale.StartScale">
+            <summary>
+起始缩放
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectRot.EndRotation">
+            <summary>
+终止旋转角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectRot.StartRotation">
+            <summary>
+起始旋转角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectMove.EndPos">
+            <summary>
+终止位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectMove.StartPos">
+            <summary>
+起始位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffectVisibility.Visible">
+            <summary>
+是否可见
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAniEffect.Clone">
+            <summary>
+克隆效果
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOAniEffect.Copy(GeoScene.Globe.GSOAniEffect)">
+            <summary>
+拷贝效果
+</summary>
+            <param name="style">要拷贝的效果</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffect.FrameCount">
+            <summary>
+帧数
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffect.RepeatCount">
+            <summary>
+重复次数
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffect.IsSmooth">
+            <summary>
+是否平滑过渡
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffect.Name">
+            <summary>
+名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAniEffect.Type">
+            <summary>
+类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAniEffect">
+            <summary>
+动画效果
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOTrackPolygonTool">
+            <summary>
+GSOTrackPolygonTool
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOTrackPolylineTool">
+            <summary>
+GSOTrackPolylineTool
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOTrackRectTool.TrackingPolygonStyle">
+            <summary>
+获取或设置GSOTrackRectTool  正在绘制时风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOTrackRectTool.PolygonStyle">
+            <summary>
+获取或设置GSOTrackRectTool 绘制完成后的风格
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOTrackRectTool">
+            <summary>
+GSOTrackRectTool控件
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOTrackTool.TrackMode">
+            <summary>
+属性，绘制模式，三种
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOTrackTool">
+            <summary>
+GSOTrackTool控件
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOHudButton.SetImage(System.String,System.String,System.String,System.String)">
+            <summary>
+设置GSOHudButton的背景图片
+</summary>
+            <param name="strNormalImage">初始化背景图片路径</param>
+            <param name="strImageMouseOn">鼠标在GSOHudButton控件上时的背景图片路径</param>
+            <param name="strImageMouseDown">在GSOHudButton控件上按下鼠标时的背景图片路径</param>
+            <param name="strImageFadeOut">GSOHudButton控件淡出时的背景图片路径</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOHudButton.SetImage(System.String)">
+            <summary>
+设置GSOHudButton的背景图片
+</summary>
+            <param name="strNormalImage">背景图片路径</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudButton.HeightFixed">
+            <summary>
+获取或设置一个值，用以指示GSOHudButton控件背景图片的高度是否根据该控件的高度进行调整
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudButton.WidthFixed">
+            <summary>
+获取或设置一个值，用以指示GSOHudButton控件背景图片的宽度是否根据该控件的宽度进行调整
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudButton.Height">
+            <summary>
+获取或设置GSOHudButton控件的高度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudButton.Width">
+            <summary>
+获取或设置GSOHudButton控件的宽度
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOHudButton">
+            <summary>
+GSOHudButton控件
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOHudPanel.GetControlByName(System.String)">
+            <summary>
+在GSOHudPanel控件中根据名称获取GSOHudControl
+</summary>
+            <param name="name">GSOHudControl名称</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOHudPanel.AddControl(GeoScene.Globe.GSOHudControl)">
+            <summary>
+在GSOHudPanel控件中添加GSOHudControl
+</summary>
+            <param name="control">要添加的GSOHudControl</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudPanel.CloseButtonVisible">
+            <summary>
+获取或设置一个值，用以指示GSOHudPanel控件的关闭按钮是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudPanel.HeightFixed">
+            <summary>
+获取或设置一个值，用以指示GSOHudPanel控件中控件的高度是否根据该控件的高度进行调整
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudPanel.WidthFixed">
+            <summary>
+获取或设置一个值，用以指示GSOHudPanel控件中控件的宽度是否根据该控件的宽度进行调整
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudPanel.Height">
+            <summary>
+获取或设置GSOHudPanel控件的高度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudPanel.Width">
+            <summary>
+获取或设置GSOHudPanel控件的宽度
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOHudPanel">
+            <summary>
+GSOHudPanel控件
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudSliderBar.BarLengthFixed">
+            <summary>
+获取或设置一个值，用以指示控件的长度是否固定
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudSliderBar.SliderValue">
+            <summary>
+获取或设置控件的值
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudSliderBar.BarLength">
+            <summary>
+获取或设置控件的长度
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOHudSliderBar">
+            <summary>
+GSOHudSliderBar控件
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOHudControl.SetOffset(System.Double,System.Double)">
+            <summary>
+设置控件的偏移量
+</summary>
+            <param name="dX">控件X轴方向偏移</param>
+            <param name="dY">控件Y轴方向偏移</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.IsRectVisible">
+            <summary>
+属性，控件区域可见，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.RectOutlineColor">
+            <summary>
+属性，控件区域边框颜色，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.RectColor">
+            <summary>
+属性，控件区域颜色，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.HighlightRectColor">
+            <summary>
+属性，控件区域高亮颜色，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.HighlightTextStyle">
+            <summary>
+属性，控件上文字高亮风格，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.TextOffset">
+            <summary>
+属性，控件上文字相对锚点的偏移量，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.TextStyle">
+            <summary>
+属性，控件上文字风格，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.TextAlign">
+            <summary>
+属性，控件上文本锚点，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.Text">
+            <summary>
+属性，控件上文本，'\n'可支持换行，[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.OffsetFixed">
+            <summary>
+获取或设置一个值，用以指示控件的偏移是否固定
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.FadeOut">
+            <summary>
+获取或设置一个值，用以指示控件是否使用淡出效果
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.Visible">
+            <summary>
+获取或设置一个值，用以指示控件是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.MinOpaque">
+            <summary>
+获取或设置控件的最小透明度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.MaxOpaque">
+            <summary>
+获取或设置控件的最大透明度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.Name">
+            <summary>
+获取或设置控件的名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.Offset">
+            <summary>
+获取或设置控件的相对位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOHudControl.Align">
+            <summary>
+获取或设置控件的对齐方式
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOHudControl">
+            <summary>
+GSOHudControl控件
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSO3DAnalysis">
+            <summary>
+三维分析
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSun.DistanceToEarth">
+            <summary>
+距离地球的距离
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSun.IsRealTimePos">
+            <summary>
+是否实时时间位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSun.Visible">
+            <summary>
+是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOSun">
+            <summary>
+太阳
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOStatusBar.GetTextVisible(GeoScene.Globe.EnumStatusBarText)">
+            <summary>
+三维控件状态条的文本是否可见
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOStatusBar.SetTextVisible(GeoScene.Globe.EnumStatusBarText,System.Boolean)">
+            <summary>
+三维控件状态条的文本显示
+</summary>
+            <param name="type">显示类型</param>
+            <param name="bVisible">是否可见</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOStatusBar.TextStyle">
+            <summary>
+获取或设置三维控件状态条的文本风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOStatusBar.TextToEndPixels">
+            <summary>
+获取或设置三维控件状态条的文本的结束像素
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOStatusBar.TextToStartPixels">
+            <summary>
+获取或设置三维控件状态条的文本的开始像素
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOStatusBar.PixelsBetweenTextItem">
+            <summary>
+获取或设置三维控件状态条的文本间隔像素
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOStatusBar.IsDMSCoord">
+            <summary>
+坐标显示是否已度分秒的形式显示，否则以十进制度的方式显示
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOStatusBar.Visible">
+            <summary>
+获取或设置一个值，用以指示三维控件状态条是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOStatusBar">
+            <summary>
+三维控件的状态条
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.EnumStatusBarText">
+            <summary>
+枚举值，三维控件状态条的文本显示
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLatLonGrid.Visible">
+            <summary>
+获取或设置一个值，用以指示三维控件的经纬网是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOLatLonGrid">
+            <summary>
+获取或设置三维控件的经纬网
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSkyBox.DNImage">
+            <summary>
+获取或设置三维控件的天空下贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSkyBox.FRImage">
+            <summary>
+获取或设置三维控件的天空前贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSkyBox.RTImage">
+            <summary>
+获取或设置三维控件的天空右贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSkyBox.BKImage">
+            <summary>
+获取或设置三维控件的天空后贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSkyBox.LFImage">
+            <summary>
+获取或设置三维控件的天空左贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSkyBox.UPImage">
+            <summary>
+获取或设置三维控件的天空上贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOSkyBox.Visible">
+            <summary>
+获取或设置一个值，用以指示三维控件的天空贴图是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOSkyBox">
+            <summary>
+获取或设置三维控件的天空贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOUnderGroundFloor.GridRowNum">
+            <summary>
+获取或设置三维控件的地下网格的格网行数
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOUnderGroundFloor.OneGridLen">
+            <summary>
+获取或设置三维控件的地下网格的格网大小
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOUnderGroundFloor.FloorImage">
+            <summary>
+获取或设置三维控件的地下网格的图片
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOUnderGroundFloor.Altitude">
+            <summary>
+获取或设置三维控件的地下网格的高度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOUnderGroundFloor.Visible">
+            <summary>
+获取或设置一个值，用以指示三维控件的地下网格是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOUnderGroundFloor">
+            <summary>
+三维控件的地下网格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOControlPanel.HighlightColor">
+            <summary>
+获取或设置三维控件面板的高亮颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOControlPanel.MinOpaque">
+            <summary>
+获取或设置三维控件面板的最小不透明度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOControlPanel.MaxOpaque">
+            <summary>
+获取或设置三维控件面板的最大不透明度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOControlPanel.FadeOut">
+            <summary>
+获取或设置一个值，用以指示三维控件面板是否使用淡出效果
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOControlPanel.Visible">
+            <summary>
+获取或设置一个值，用以指示三维控件面板是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOControlPanel">
+            <summary>
+三维控件面板
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAtmosphere.ShaderUsing">
+            <summary>
+获取或设置一个值，用以指示大气层是否启用光影大气
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOAtmosphere.Visible">
+            <summary>
+获取或设置一个值，用以指示大气层是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOAtmosphere">
+            <summary>
+大气层
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOCameraState.AltitudeMode">
+            <summary>
+获取或设置视点的高度模式，支持3种模式，绝对高度、相对地面高度、贴地
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOCameraState.Altitude">
+            <summary>
+获取或设置视点离地面的垂直距离
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOCameraState.Latitude">
+            <summary>
+获取或设置视点的经度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOCameraState.Longitude">
+            <summary>
+获取或设置视点的纬度
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOCameraState.Heading">
+            <summary>
+视线的方向与正北的夹角，0度表示正北，90度表示正东，180度表示正南
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOCameraState.Tilt">
+            <summary>
+视线与铅垂线的夹角，0度表示垂直向下看，90度表示沿水平方向看
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOCameraState">
+            <summary>
+视点
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.HitTest(System.Int32,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+探测要素是否被点中
+</summary>
+            <param name="x">鼠标在产生鼠标事件时的X坐标</param>
+            <param name="y">鼠标在产生鼠标事件时的X坐标</param>
+            <param name="bHighPrecision">高精度模式选择</param>
+            <param name="bIgnoreLayerSelectable">是否忽略图层可选择</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.Refresh">
+            <summary>
+刷新场景
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.FullExtent">
+            <summary>
+显示全球
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.RemoveAllFeature">
+            <summary>
+移除所有要素
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.RemoveFeatureByName(System.String)">
+            <summary>
+根据strName移除要素
+</summary>
+            <param name="strName">要移除的要素strName</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.RemoveFeatureByCustomID(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>
+根据CustomID移除要素
+</summary>
+            <param name="nID">要移除的要素CustomID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.RemoveFeatureByID(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>
+根据ID移除要素
+</summary>
+            <param name="nID">要移除的要素ID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.RemoveFeatureByIndex(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>
+根据Index移除要素
+</summary>
+            <param name="nIndex">要移除的要素Index</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.RemoveFeature(GeoScene.Data.GSOFeature)">
+            <summary>
+移除要素
+</summary>
+            <param name="feature">要移除的要素</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.GetFeatureByName(System.String)">
+            <summary>
+根据名称获取要素
+</summary>
+            <param name="strName">要获取的要素名称</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.GetFeatureByIndex(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>
+根据Index获取要素
+</summary>
+            <param name="nIndex">要获取的要素Index</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.GetFeatureByCustomID(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>
+根据CustomID获取要素
+</summary>
+            <param name="nID">要获取的要素CustomID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.GetFeatureByID(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>
+根据ID获取要素
+</summary>
+            <param name="nID">要获取的要素ID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOPlane3DScene.AddFeature(GeoScene.Data.GSOFeature)">
+            <summary>
+添加要素
+</summary>
+            <param name="feature">要添加的要素</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.SceneAmbient">
+            <summary>
+场景环境反射光
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.SceneLight">
+            <summary>
+场景光照相关
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.Action">
+            <summary>
+鼠标状态
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.HighlightEntityStyle3D">
+            <summary>
+高亮风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.ModelRenderDetail">
+            <summary>
+模型渲染细节
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.SceneGridVisible">
+            <summary>
+场景网格是否可见,[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.SceneAxisVisible">
+            <summary>
+场景坐标轴是否可见,[in/out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOPlane3DScene.Antialiasing">
+            <summary>
+获取或设置一个值，用以指示场景是否启用反走样,[in/out]
+</summary>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.LoadPowerlineTemplate(System.String)">
+            <summary>
+加载电力线模板
+</summary>
+            <param name="strTemplatePath">电力线模板路径</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.AddFileDataset(System.String,System.String)">
+            <summary>
+添加一个打开一个数据集到文件数据源中
+适合该文件数据源中只有一个数据集的情况
+</summary>
+            <param name="strFilePath">文件数据集路径</param>
+            <param name="strProj4">文件数据集路径</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.AddFileDataset(System.String)">
+            <summary>
+添加一个打开一个数据集到文件数据源中
+适合该文件数据源中只有一个数据集的情况
+</summary>
+            <param name="strFilePath">文件数据集路径</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.OpenFileDataSource(System.String)">
+            <summary>
+直接打开一个文件数据源
+</summary>
+            <param name="strFilePath">文件数据源路径</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.OpenDataSource(System.String,System.String,System.String,System.String,System.String,System.String,GeoScene.Data.EnumDataSourceType)">
+            <summary>
+打开一个数据源,,并且添加到数据管理器中
+</summary>
+            <param name="strServer">服务名,服务器地址或者配置好的DNS名,若为配置好的DNS名，后面的参数都可不填写</param>
+            <param name="strPort">端口号，若为空则表示默认的端口号</param>
+            <param name="strDriver">驱动名</param>
+            <param name="strDataBase">数据库名</param>
+            <param name="strUser">用户名</param>
+            <param name="strPassword">密码</param>
+            <param name="eType">数据源类型</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.CreateDataSource(System.String,System.String,System.String,System.String,System.String,System.String,GeoScene.Data.EnumDataSourceType)">
+            <summary>
+新建一个数据源,并且添加到数据管理器中
+</summary>
+            <param name="strServer">服务名,服务器地址或者配置好的DNS名,若为配置好的DNS名，后面的参数都可不填写</param>
+            <param name="strPort">端口号，若为空则表示默认的端口号</param>
+            <param name="strDriver">驱动名</param>
+            <param name="strDataBase">数据库名</param>
+            <param name="strUser">用户名</param>
+            <param name="strPassword">密码</param>
+            <param name="eType">数据源类型</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.OpenOracleDataSource(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+打开一个SqlServer数据源,并且添加到数据管理器中
+</summary>
+            <param name="strServer">服务名,服务器地址或者配置好的DNS名,若为配置好的DNS名，后面的参数都可不填写</param>
+            <param name="strPort">端口号，若为空则表示默认的端口号</param>
+            <param name="strDataBase">数据库名</param>
+            <param name="strUser">用户名</param>
+            <param name="strPassword">密码</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.CreateOracleDataSource(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+新建一个SqlServer数据源,并且添加到数据管理器中
+</summary>
+            <param name="strServer">服务名,服务器地址或者配置好的DNS名,若为配置好的DNS名，后面的参数都可不填写</param>
+            <param name="strPort">端口号，若为空则表示默认的端口号</param>
+            <param name="strDataBase">数据库名</param>
+            <param name="strUser">用户名</param>
+            <param name="strPassword">密码</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.OpenSqlServerDataSource(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+打开一个SqlServer数据源,并且添加到数据管理器中
+</summary>
+            <param name="strServer">服务名,服务器地址或者配置好的DNS名,若为配置好的DNS名，后面的参数都可不填写</param>
+            <param name="strPort">端口号，若为空则表示默认的端口号</param>
+            <param name="strDataBase">数据库名</param>
+            <param name="strUser">用户名</param>
+            <param name="strPassword">密码</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.CreateSqlServerDataSource(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+新建一个SqlServer数据源,并且添加到数据管理器中
+</summary>
+            <param name="strServer">服务名,服务器地址或者配置好的DNS名,若为配置好的DNS名，后面的参数都可不填写</param>
+            <param name="strPort">端口号，若为空则表示默认的端口号</param>
+            <param name="strDataBase">数据库名</param>
+            <param name="strUser">用户名</param>
+            <param name="strPassword">密码</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.OpenDataSource(GeoScene.Data.GSODataSourceCnn)">
+            <summary>
+打开一个数据源,并且添加到数据管理器中
+</summary>
+            <param name="connection">连接变量</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataManager.CreateDataSource(GeoScene.Data.GSODataSourceCnn)">
+            <summary>
+新建一个数据源,并且添加到数据管理器中
+</summary>
+            <param name="connection">连接变量</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.DeleteAllDatasets">
+            <summary>
+删除数据源中的所有数据集，会将数据集从存储处彻底删除
+</summary>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.DeleteDatasetByName(System.String)">
+            <summary>
+在数据源中按名称移除数据集，会将数据集从存储处彻底删除
+</summary>
+            <param name="strName">数据集名称</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.DeleteDatasetByAlias(System.String)">
+            <summary>
+在数据源中按别称移除数据集，会将数据集从存储处彻底删除
+</summary>
+            <param name="strAlias">数据集别称</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.DeleteDatasetAt(System.Int32)">
+            <summary>
+在数据源中按名称删除数据集，会将数据集从存储处彻底删除
+</summary>
+            <param name="nIndex">数据集名称</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.RemoveAllDatasets">
+            <summary>
+移除数据源中的所有数据集
+</summary>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.RemoveDatasetByAlias(System.String)">
+            <summary>
+在数据源中按别称移除数据集
+</summary>
+            <param name="strAlias">数据集别称</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.RemoveDatasetByName(System.String)">
+            <summary>
+在数据源中按名称移除数据集
+</summary>
+            <param name="strName">数据集名称</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.RemoveDatasetAt(System.Int32)">
+            <summary>
+在数据源中按索引移除数据集
+</summary>
+            <param name="nIndex">数据集索引</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.AddDataset(GeoScene.Engine.GSODataset)">
+            <summary>
+在数据源中添加数据集
+</summary>
+            <param name="dataset">数据集</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.GetDatasetByCaption(System.String)">
+            <summary>
+在数据源中按标题获取数据集
+</summary>
+            <param name="strCaption">数据集标题</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.GetDatasetByAlias(System.String)">
+            <summary>
+在数据源中按别称获取数据集
+</summary>
+            <param name="strAlias">数据集别称</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.GetDatasetByName(System.String)">
+            <summary>
+在数据源中按名称获取数据集
+</summary>
+            <param name="strName">数据集名称</param>
+        </member>
+        <member name="M:GeoScene.Engine.GSODataSource.GetDatasetAt(System.Int32)">
+            <summary>
+在数据源中按索引获取数据集
+</summary>
+            <param name="nIndex">数据集索引</param>
+        </member>
+        <member name="P:GeoScene.Engine.GSODataSource.Caption">
+            <summary>
+获取数据源的标题
+</summary>
+        </member>
+        <member name="P:GeoScene.Engine.GSODataSource.Alias">
+            <summary>
+获取或设置数据源的别称
+</summary>
+        </member>
+        <member name="P:GeoScene.Engine.GSODataSource.Name">
+            <summary>
+获取数据源的名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Engine.GSODataSource.DatasetCount">
+            <summary>
+获取数据源中的数据集个数
+</summary>
+        </member>
+        <member name="P:GeoScene.Engine.GSODataSource.default(System.Int32)">
+            <summary>
+在数据源中根据索引值获取数据集
+</summary>
+        </member>
+        <member name="P:GeoScene.Engine.GSODataSource.Item(System.String)">
+            <summary>
+在数据源中根据名称获取数据集
+</summary>
+        </member>
+        <member name="P:GeoScene.Engine.GSODataSource.Type">
+            <summary>
+获取数据源的类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Engine.GSODataSource">
+            <summary>
+数据源
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.ReadOnly">
+            <summary>
+是否只读
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.Type">
+            <summary>
+字段类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.Port">
+            <summary>
+端口号
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.Password">
+            <summary>
+密码
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.User">
+            <summary>
+用户名
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.Database">
+            <summary>
+数据库名
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.Driver">
+            <summary>
+驱动名
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODataSourceCnn.Server">
+            <summary>
+服务名
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSODataSourceCnn">
+            <summary>
+标签
+</summary>
+        </member>
+        <member name="P:GeoScene.Engine.GSOFeatureDataset.FieldCount">
+            <summary>
+获取数据源中的数据集个数
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOFeatures.FindByID(System.Int32)">
+            <summary>
+获取要素
+</summary>
+            <param name="nID">要获取要素的ID</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOFeatures.RemoveAll">
+            <summary>
+删除所有要素
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOFeatures.Remove(System.Int32)">
+            <summary>
+删除要素
+</summary>
+            <param name="index">要删除要素的索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOFeatures.Add(GeoScene.Data.GSOFeature)">
+            <summary>
+添加要素
+</summary>
+            <param name="value">要添加的要素</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOFeatures.Item(System.Int32)">
+            <summary>
+按索引值获取要素
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOFeatures">
+            <summary>
+多个要素
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoRangeEllipFrustumEntity.Clone">
+            <summary>
+复制缺口椭圆台
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipFrustumEntity.EndAngle">
+            <summary>
+获取或设置缺口椭圆台终止角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipFrustumEntity.StartAngle">
+            <summary>
+获取或设置缺口椭圆台起始角度
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoRangeEllipFrustumEntity">
+            <summary>
+缺口椭圆台
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoRangeEllipCylinderEntity.Clone">
+            <summary>
+复制缺口椭圆柱
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipCylinderEntity.EndAngle">
+            <summary>
+获取或设置缺口椭圆柱终止角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipCylinderEntity.StartAngle">
+            <summary>
+获取或设置缺口椭圆柱起始角度
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoRangeEllipCylinderEntity">
+            <summary>
+缺口椭圆柱
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoRangeEllipsoidEntity.Clone">
+            <summary>
+复制缺口椭球
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipsoidEntity.EndLat">
+            <summary>
+获取或设置缺口椭球终止纬度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipsoidEntity.StartLat">
+            <summary>
+获取或设置缺口椭球起始纬度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipsoidEntity.EndLon">
+            <summary>
+获取或设置缺口椭球终止经度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRangeEllipsoidEntity.StartLon">
+            <summary>
+获取或设置缺口椭球起始经度
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoRangeEllipsoidEntity">
+            <summary>
+缺口椭球
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEllipFrustumEntity.Clone">
+            <summary>
+复制椭圆台
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEllipFrustumEntity.SetLengthByLine(GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线的长度设置椭圆台的长度
+</summary>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEllipFrustumEntity.CreateByLine(System.Double,System.Double,System.Double,System.Double,GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线画椭圆台
+</summary>
+            <param name="dBottomXRadius">底部x方向半径</param>
+            <param name="dBottomYRadius">底部y方向半径</param>
+            <param name="dTopXRadius">顶部x方向半径</param>
+            <param name="dTopYRadius">顶部y方向半径</param>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipFrustumEntity.Slices">
+            <summary>
+获取或设置椭圆台分段数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipFrustumEntity.Length">
+            <summary>
+获取或设置椭圆台长度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipFrustumEntity.TopYRadius">
+            <summary>
+获取或设置椭圆台顶部y方向半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipFrustumEntity.TopXRadius">
+            <summary>
+获取或设置椭圆台顶部x方向半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipFrustumEntity.BottomYRadius">
+            <summary>
+获取或设置椭圆台底部y方向半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipFrustumEntity.BottomXRadius">
+            <summary>
+获取或设置椭圆台底部x方向半径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoEllipFrustumEntity">
+            <summary>
+椭圆台
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEllipCylinderEntity.Clone">
+            <summary>
+复制椭圆柱
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEllipCylinderEntity.SetLengthByLine(GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线的长度设置椭圆柱的长度
+</summary>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEllipCylinderEntity.CreateByLine(System.Double,System.Double,GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线画椭圆柱
+</summary>
+            <param name="dXRadius">x方向半径</param>
+            <param name="dYRadius">y方向半径</param>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipCylinderEntity.Slices">
+            <summary>
+获取或设置椭圆柱分段数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipCylinderEntity.Length">
+            <summary>
+获取或设置椭圆柱长度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipCylinderEntity.YRadius">
+            <summary>
+获取或设置椭圆柱y方向半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipCylinderEntity.XRadius">
+            <summary>
+获取或设置椭圆柱x方向半径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoEllipCylinderEntity">
+            <summary>
+椭圆柱
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoFrustumEntity.Clone">
+            <summary>
+复制台
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoFrustumEntity.SetLengthByLine(GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线的长度设置台的长度
+</summary>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoFrustumEntity.CreateByLine(System.Double,System.Double,GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线画台
+</summary>
+            <param name="dBottomRadius">底部半径</param>
+            <param name="dTopRadius">顶部半径</param>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFrustumEntity.Slices">
+            <summary>
+获取或设置台分段数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFrustumEntity.Length">
+            <summary>
+获取或设置台长度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFrustumEntity.TopRadius">
+            <summary>
+获取或设置台顶部半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFrustumEntity.BottomRadius">
+            <summary>
+获取或设置台底部半径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoFrustumEntity">
+            <summary>
+台
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoCylinderEntity.Clone">
+            <summary>
+复制柱
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoCylinderEntity.SetLengthByLine(GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线的长度设置柱的长度
+</summary>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoCylinderEntity.CreateByLine(System.Double,GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线画柱
+</summary>
+            <param name="dRadius">半径</param>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoCylinderEntity.Slices">
+            <summary>
+获取或设置柱的分段数，此参数决定柱是圆柱或棱柱，Slices=4，为4棱柱，Slices&gt;32时为圆柱
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoCylinderEntity.Length">
+            <summary>
+获取或设置柱的长度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoCylinderEntity.Radius">
+            <summary>
+获取或设置柱的半径（两端半径）
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoCylinderEntity">
+            <summary>
+柱
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEllipsoidEntity.Clone">
+            <summary>
+复制椭球
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipsoidEntity.Slices">
+            <summary>
+获取或设置椭球圆周分段数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipsoidEntity.Stacks">
+            <summary>
+获取或设置椭球纵向分段数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipsoidEntity.ZRadius">
+            <summary>
+获取或设置椭球z方向半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipsoidEntity.YRadius">
+            <summary>
+获取或设置椭球y方向半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipsoidEntity.XRadius">
+            <summary>
+获取或设置椭球x方向半径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoEllipsoidEntity">
+            <summary>
+椭球
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoSphereEntity.Radius">
+            <summary>
+获取或设置半径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoSphereEntity">
+            <summary>
+球
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBoxEntity.Clone">
+            <summary>
+复制长方体
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBoxEntity.Height">
+            <summary>
+获取或设置长方体高度（z轴方向长度）
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBoxEntity.Width">
+            <summary>
+获取或设置长方体宽度(y轴方向长度)
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBoxEntity.Length">
+            <summary>
+获取或设置长方体长度(x方向长度)
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoBoxEntity">
+            <summary>
+长方体
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.Clone">
+            <summary>
+复制电力线
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.SetLink(System.Int32,GeoScene.Data.GSOGeoPowerLineLink)">
+            <summary>
+按索引值修改电力线中的连接
+</summary>
+            <param name="index">索引值</param>
+            <param name="pLink">电力线连接</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.GetLink(System.Int32)">
+            <summary>
+按索引值获取电力线中的连接
+</summary>
+            <param name="index">索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.SetNodeInnerLink(System.Int32,GeoScene.Data.GSOGeoPowerLineLink)">
+            <summary>
+按索引值修改电力线中的节点内部连接
+</summary>
+            <param name="index">索引值</param>
+            <param name="pLink">电力线连接</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.GetNodeInnerLink(System.Int32)">
+            <summary>
+按索引值获取电力线中的节点内部连接
+</summary>
+            <param name="index">索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.SetNode(System.Int32,GeoScene.Data.GSOGeoPowerLineNode)">
+            <summary>
+修改在某个位置的节点
+</summary>
+            <param name="index">要修改的节点的索引值</param>
+            <param name="pNode">节点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.GetNode(System.Int32)">
+            <summary>
+按索引值获取电力线中的节点
+</summary>
+            <param name="index">节点的索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.InsertNode(System.Int32,GeoScene.Data.GSOGeoPowerLineNode)">
+            <summary>
+在某个位置添加节点
+</summary>
+            <param name="index">添加节点的索引值</param>
+            <param name="pNode">要添加的节点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.RemoveNode(System.Int32)">
+            <summary>
+根据索引值删除电力线的节点
+</summary>
+            <param name="index">索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLine.AddNode(GeoScene.Data.GSOGeoPowerLineNode)">
+            <summary>
+添加节点
+</summary>
+            <param name="pNode">要添加的节点</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLine.InnerLinkLineStyle">
+            <summary>
+获取或设置电力线的内部连接线的风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLine.LinkLineStyle">
+            <summary>
+获取或设置电力线的连接线风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLine.LinkCount">
+            <summary>
+获取电力线的连接个数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLine.NodeCount">
+            <summary>
+获取电力线的节点个数
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoPowerLine">
+            <summary>
+电力线
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineLink.Clone">
+            <summary>
+复制电力线连接线
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineLink.SetLinkTemplate(GeoScene.Data.GSOPowerLineTemplate)">
+            <summary>
+设置电力线的连接线模板
+</summary>
+            <param name="linkTemplate">连接线模板</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineLink.GetLinkLine(System.Int32)">
+            <summary>
+根据索引值获取连接线
+</summary>
+            <param name="index">连接线索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineLink.GetLinkLineByID(System.Int32)">
+            <summary>
+根据ID获取连接线
+</summary>
+            <param name="nID">连接线ID</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineLink.GetLinkLineByName(System.String)">
+            <summary>
+根据名称获取连接线
+</summary>
+            <param name="strName">连接线名称</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLineLink.LinkLineCount">
+            <summary>
+获取或设置连接线数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLineLink.LinkLineStyle">
+            <summary>
+获取或设置连接线的风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLineLink.LinkTemplatePath">
+            <summary>
+获取或设置连接线模板的路径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoPowerLineLink">
+            <summary>
+电力线连接线
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineNode.Clone">
+            <summary>
+复制电力线节点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineNode.SetNodeTemplate(GeoScene.Data.GSOPowerLineTemplate)">
+            <summary>
+设置电力线节点模板
+</summary>
+            <param name="nodeTemplate">节点模板</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineNode.GetNodeEntity(System.Int32)">
+            <summary>
+根据索引值获取电力线的某个节点实体
+</summary>
+            <param name="index">索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineNode.GetNodeEntityByName(System.String)">
+            <summary>
+根据节点Name获取电力线的某个节点实体
+</summary>
+            <param name="strName">节点Name</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPowerLineNode.GetNodeEntityByID(System.Int32)">
+            <summary>
+根据节点ID获取电力线的某个节点实体
+</summary>
+            <param name="nID">节点ID</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLineNode.NodeEntityCount">
+            <summary>
+获取或设置电力线节点实体个数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPowerLineNode.NodeTemplatePath">
+            <summary>
+获取或设置电力线节点模板路径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoPowerLineNode">
+            <summary>
+电力线节点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoLinkLine.Clone">
+            <summary>
+复制连接线
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoLinkLine">
+            <summary>
+连接线
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPowerLineTemplate">
+            <summary>
+电力线模板
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoSpark">
+            <summary>
+喷泉
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.GetEmitterCount">
+            <summary>
+获取粒子发射器数目
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.GetEmitterByName(System.String)">
+            <summary>
+获取一个粒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.GetEmitterAt(System.Int32)">
+            <summary>
+获取一个粒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.RemoveAllEmitters">
+            <summary>
+移除所有粒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.RemoveEmitterAt(System.Int32)">
+            <summary>
+移除一个粒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.RemoveEmitterByName(System.String)">
+            <summary>
+移除一个粒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.InsertEmitterAt(System.Int32,GeoScene.Data.GSOParticleEmitter)">
+            <summary>
+插入一个粒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoParticle.AddEmitter(GeoScene.Data.GSOParticleEmitter)">
+            <summary>
+添加一个粒子发射器
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoParticle">
+            <summary>
+喷泉
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoFX">
+            <summary>
+GeoFX
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPit.Clone">
+            <summary>
+复制坑
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.PitPolygon">
+            <summary>
+获取或设置坑的边界多边形
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.BottomTextureParam">
+            <summary>
+获取或设置坑底面纹理
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.BodyTextureParam">
+            <summary>
+获取或设置坑侧面纹理
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.DefaultBottomTextureUsed">
+            <summary>
+是否使用坑底部的默认纹理
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.DefaultBodyTextureUsed">
+            <summary>
+是否使用坑侧面的默认纹理
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.BottomVisible">
+            <summary>
+是否坑底部可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.BodyVisible">
+            <summary>
+是否坑侧面可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.PitDepthUsing">
+            <summary>
+获取或设置一个值，用以指示使用深度挖坑（深度挖坑或底部海拔挖坑）
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.PitBottomAlt">
+            <summary>
+获取或设置坑的底部高程
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPit.PitDepth">
+            <summary>
+获取或设置坑的深度
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoPit">
+            <summary>
+坑
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoWater.Clone">
+            <summary>
+复制水面
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.WaveDuDvImage">
+            <summary>
+获取或设置水面的噪声图
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.WaveNormalImage">
+            <summary>
+获取或设置水面的向量图
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.UseWaveLOD">
+            <summary>
+获取或设置一个值，用以指示水面是否波纹逐渐细化
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.ReflectSky">
+            <summary>
+获取或设置一个值，用以指示水面是否使用天空倒影
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.LightType">
+            <summary>
+获取或设置水面的光源类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.RefractColor">
+            <summary>
+获取或设置水面的折射颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.ReflectColor">
+            <summary>
+获取或设置水面的反射颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.WaterColor">
+            <summary>
+获取或设置水面的水波颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.WaveWidth">
+            <summary>
+获取或设置水面的水波宽度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.WaveSpeedY">
+            <summary>
+获取或设置水面的纵向速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoWater.WaveSpeedX">
+            <summary>
+获取或设置水面的横向速度
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoWater">
+            <summary>
+水面
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoGroupEntity">
+            <summary>
+实体组
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEntity.Clone">
+            <summary>
+复制实体
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEntity.SetAngleByLine(GeoScene.Data.GSOPoint3d,GeoScene.Data.GSOPoint3d,GeoScene.Data.EnumAltitudeMode)">
+            <summary>
+根据线设置实体的角度
+</summary>
+            <param name="startPoint">起始点</param>
+            <param name="endPoint">终止点</param>
+            <param name="lineAltMode">高度模式</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEntity.SetRotation(System.Double,System.Double,System.Double)">
+            <summary>
+设置实体在X,Y,Z轴方向上的旋转角度
+</summary>
+            <param name="x">X方向旋转角度</param>
+            <param name="y">Y方向旋转角度</param>
+            <param name="z">Z方向旋转角度</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEntity.SetScale(System.Double,System.Double,System.Double)">
+            <summary>
+设置实体在X,Y,Z轴方向上的缩放倍数
+</summary>
+            <param name="x">X方向缩放倍数</param>
+            <param name="y">Y方向缩放倍数</param>
+            <param name="z">Z方向缩放倍数</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEntity.SetScale(System.Double)">
+            <summary>
+设置实体的缩放倍数
+</summary>
+            <param name="dValue">缩放倍数</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoEntity.SetPosition(System.Double,System.Double,System.Double)">
+            <summary>
+设置实体的位置
+</summary>
+            <param name="x">X坐标</param>
+            <param name="y">Y坐标</param>
+            <param name="z">Z坐标</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.RotateZ">
+            <summary>
+获取或设置实体Z轴方向上的旋转
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.RotateY">
+            <summary>
+获取或设置实体Y轴方向上的旋转
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.RotateX">
+            <summary>
+获取或设置实体X轴方向上的旋转
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.ScaleZ">
+            <summary>
+获取或设置实体Z轴方向上的缩放倍数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.ScaleY">
+            <summary>
+获取或设置实体Y轴方向上的缩放倍数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.ScaleX">
+            <summary>
+获取或设置实体X轴方向上的缩放倍数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.OffsetMetersZ">
+            <summary>
+获取或设置实体的Z方向偏移
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.OffsetMetersY">
+            <summary>
+获取或设置实体的Y方向偏移
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.OffsetMetersX">
+            <summary>
+获取或设置实体的X方向偏移
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.PositionZ">
+            <summary>
+获取或设置实体的Z坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.PositionY">
+            <summary>
+获取或设置实体的Y坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.PositionX">
+            <summary>
+获取或设置实体的X坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.Rotation">
+            <summary>
+获取或设置实体的旋转
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.ScaleXYZ">
+            <summary>
+获取或设置实体在X,Y,Z方向上的缩放倍数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.Position">
+            <summary>
+获取或设置实体的位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEntity.Align">
+            <summary>
+获取或设置实体的对齐方式
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoMarker.Clone">
+            <summary>
+复制标注
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoMarker.Text">
+            <summary>
+标注文本
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoMarker">
+            <summary>
+标注
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.IndexOf(GeoScene.Data.GSOPoint3ds)">
+            <summary>
+获取面中指定点的索引值
+</summary>
+            <param name="part">面中的点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.Clone">
+            <summary>
+复制面
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.Move(System.Double,System.Double,System.Double)">
+            <summary>
+面中点的X,Y,Z值统一增加一定数值
+</summary>
+            <param name="dx">X值增加的数值</param>
+            <param name="dy">Y值增加的数值</param>
+            <param name="dz">Z值增加的数值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.MoveXY(System.Double,System.Double)">
+            <summary>
+面中点的X,Y值统一增加一定数值
+</summary>
+            <param name="dx">X值增加的数值</param>
+            <param name="dy">Y值增加的数值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.MoveZ(System.Double)">
+            <summary>
+面中点的Z值统一增加一定数值
+</summary>
+            <param name="dz">Z值增加的数值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.InsertPointsToLine(System.Double,System.Boolean)">
+            <summary>
+对线添加一些辅助点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.RemoveRedundant(System.Double,System.Boolean,System.Double)">
+            <summary>
+对线进行剔除冗余顶点,dToleranceXY一般情况下可填写为1e-10
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.SmoothToSpline">
+            <summary>
+对线进行平滑
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.Reverse">
+            <summary>
+判断线是否反转
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.Clear">
+            <summary>
+清空
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.RemovePart(System.Int32)">
+            <summary>
+按索引值在面中删除部分
+</summary>
+            <param name="index">索引值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.InsertPart(System.Int32,GeoScene.Data.GSOPoint3ds)">
+            <summary>
+按索引值在面中添加点
+</summary>
+            <param name="index">索引值</param>
+            <param name="points">要添加的点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.ConvertToGeoWater">
+            <summary>
+面转换成水面
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.ConvertToGeoPolyline3D">
+            <summary>
+面转换成线
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolygon3D.AddPart(GeoScene.Data.GSOPoint3ds)">
+            <summary>
+面添加部分
+</summary>
+            <param name="points">要添加的点</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPolygon3D.Item(System.Int32)">
+            <summary>
+根据索引值获取面各部分的点或设置面各部分点的索引值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPolygon3D.Perimeter">
+            <summary>
+获取面的边界周长
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPolygon3D.Area">
+            <summary>
+获取面的面积
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPolygon3D.PartCount">
+            <summary>
+获取组成面的线的部分数
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoPolygon3D">
+            <summary>
+面
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.Clone">
+            <summary>
+复制线
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.Move(System.Double,System.Double,System.Double)">
+            <summary>
+线中点的X,Y,Z值统一增加一定数值
+</summary>
+            <param name="dx">X值增加的数值</param>
+            <param name="dy">Y值增加的数值</param>
+            <param name="dz">Z值增加的数值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.MoveXY(System.Double,System.Double)">
+            <summary>
+线中点的X,Y值统一增加一定数值
+</summary>
+            <param name="dx">X值增加的数值</param>
+            <param name="dy">Y值增加的数值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.MoveZ(System.Double)">
+            <summary>
+线中点的Z值统一增加一定数值
+</summary>
+            <param name="dz">Z值增加的数值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.SetAltitude(System.Double)">
+            <summary>
+为线的各点设置统一高度
+</summary>
+            <param name="dAltitude">高度</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.GetSegment(System.Double,System.Double,System.Int32,System.Double,System.Boolean)">
+            <summary>
+截取一段
+</summary>
+            <param name="dFromDistance">该段的起始距离</param>
+            <param name="dToDistance">该段的终止距离</param>
+            <param name="nSubIndex">在该子线段上截取一段</param>
+            <param name="dGlobeRadius">若是经纬度数据，计算距离所用的球体半径</param>
+            <param name="bDistIgnoreZ">计算距离的时候是否考虑线段的z值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.GetSegment(System.Double,System.Double)">
+            <summary>
+截取一段
+</summary>
+            <param name="dFromDistance">该段的起始距离</param>
+            <param name="dToDistance">该段的终止距离</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.CreateBuffer(System.Double,System.Boolean,System.Double,System.Boolean,System.Boolean)">
+            <summary>
+创建缓冲区
+</summary>
+            <param name="dWidth">缓冲区宽度</param>
+            <param name="bRoundCorner">拐弯处半径</param>
+            <param name="dCornerSliceAngle">缓冲区宽度</param>
+            <param name="bRoundsEnds">缓冲区宽度</param>
+            <param name="bUnitDegree">缓冲区宽度</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.GetSpaceLength(System.Boolean,System.Double)">
+            <summary>
+获取线的空间长度
+</summary>
+            <param name="bIgnoreZ">是否忽略Z值</param>
+            <param name="dRadius">半径</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.GetSphereLength(System.Double)">
+            <summary>
+获取线的地表长度
+</summary>
+            <param name="dRadius">半径</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.IndexOf(GeoScene.Data.GSOPoint3ds)">
+            <summary>
+获取线中点的索引值
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.InsertPart(System.Int32,GeoScene.Data.GSOPoint3ds)">
+            <summary>
+按索引值在线中添加点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.ConvertToRegion">
+            <summary>
+将线转换成区域
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.RemovePart(System.Int32)">
+            <summary>
+按索引值删除线中的一段
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.AddPart(GeoScene.Data.GSOPoint3ds)">
+            <summary>
+在线中添加一段
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.InsertPointsToLine(System.Double,System.Boolean)">
+            <summary>
+对线添加一些辅助点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.RemoveRedundant(System.Double,System.Boolean,System.Double)">
+            <summary>
+对线进行剔除冗余顶点,dToleranceXY一般情况下可填写为1e-10
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.SmoothToSpline">
+            <summary>
+对线进行平滑
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.Reverse">
+            <summary>
+判断线是否反转
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPolyline3D.Clear">
+            <summary>
+清空线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPolyline3D.PartCount">
+            <summary>
+获取组成线的线段数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPolyline3D.Item(System.Int32)">
+            <summary>
+根据索引值获取线的部分点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPoint3D.Clone">
+            <summary>
+复制点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoPoint3D.SetPosition(System.Double,System.Double,System.Double)">
+            <summary>
+设置点的位置
+</summary>
+            <param name="x">点的X坐标</param>
+            <param name="y">点的Y坐标</param>
+            <param name="z">点的Z坐标</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPoint3D.Position">
+            <summary>
+获取或设置点的位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPoint3D.Z">
+            <summary>
+获取或设置点的Z坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPoint3D.Y">
+            <summary>
+获取或设置点的Y坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPoint3D.X">
+            <summary>
+获取或设置点的X坐标
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoPoint3D">
+            <summary>
+点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.Copy(GeoScene.Data.GSOGeometry)">
+            <summary>
+拷贝几何体
+</summary>
+            <param name="geometry">要重复的几何体</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.Clone">
+            <summary>
+复制几何体
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.SetModified(System.Boolean)">
+            <summary>
+标记是否进行了修改
+</summary>
+            <param name="bVal">是否修改</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.Stop">
+            <summary>
+停止播放
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.Play">
+            <summary>
+播放
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.RePlay">
+            <summary>
+重复播放
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.Rotate(System.Double,System.Double,System.Double)">
+            <summary>
+在X,Y,Z轴方向上旋转几何体
+</summary>
+            <param name="dx">在X轴方向上旋转的角度</param>
+            <param name="dy">在Y轴方向上旋转的角度</param>
+            <param name="dz">在Z轴方向上旋转的角度</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.Scale(System.Double,System.Double,System.Double)">
+            <summary>
+在X,Y,Z轴方向上缩放几何体
+</summary>
+            <param name="dx">在X轴方向上缩放的倍数</param>
+            <param name="dy">在Y轴方向上移动的倍数</param>
+            <param name="dz">在Z轴方向上移动的倍数</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.Move(System.Double,System.Double,System.Double)">
+            <summary>
+在X,Y,Z轴方向上移动几何体
+</summary>
+            <param name="dx">在X轴方向上移动的值</param>
+            <param name="dy">在Y轴方向上移动的值</param>
+            <param name="dz">在Z轴方向上移动的值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.MoveXY(System.Double,System.Double)">
+            <summary>
+在X,Y轴方向上移动几何体
+</summary>
+            <param name="dx">在X轴方向上移动的值</param>
+            <param name="dy">在Y轴方向上移动的值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometry.MoveZ(System.Double)">
+            <summary>
+在Z轴方向上移动几何体
+</summary>
+            <param name="dz">在Z轴方向上移动的值</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.RepeatCount">
+            <summary>
+获取或设置重复次数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.PlaySpeed">
+            <summary>
+获取动画播放速度(单位：帧/每秒),和TimerInterval那个互为倒数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.TimerInterval">
+            <summary>
+获取动画两帧之间的时间间隔，单位毫秒
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.HighLight">
+            <summary>
+获取或设置该对象是否高亮显示
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.IsAsynLoaded">
+            <summary>
+获取或设置是否异步加载
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.IsEntity">
+            <summary>
+获取该对象是否实体对象
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.AltitudeMode">
+            <summary>
+获取或设置几何体高度模式
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.Label">
+            <summary>
+获取或设置几何体标签
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.CameraState">
+            <summary>
+获取或设置几何体视点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.HighLightStyle">
+            <summary>
+获取或设置几何体高亮风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.ExtrudeStyle">
+            <summary>
+获取或设置几何体拉伸风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.Style">
+            <summary>
+获取或设置几何体风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.StyleID">
+            <summary>
+获取或设置几何体风格ID
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.Name">
+            <summary>
+获取或设置几何体名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.CustomID">
+            <summary>
+获取或设置几何体CustomID
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.ID">
+            <summary>
+获取几何体ID
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.GeoBottomCenterPoint">
+            <summary>
+几何体底部中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.GeoTopCenterPoint">
+            <summary>
+几何体顶部中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.GeoCenterPoint">
+            <summary>
+几何体中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.GeoCenterPoint2d">
+            <summary>
+几何体中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.Bounds">
+            <summary>
+几何体的边界
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeometry.Type">
+            <summary>
+枚举值几何体类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeometry">
+            <summary>
+几何体
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabel.Style">
+            <summary>
+获取或设置标签的风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabel.BKImage">
+            <summary>
+获取或设置标签的背景图片
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabel.Text">
+            <summary>
+获取或设置标签的显示内容
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabel.Visible">
+            <summary>
+获取或设置一个值，用以指示标签是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOLabel">
+            <summary>
+标签
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.TextStyle">
+            <summary>
+获取或设置标签的字体风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.HasTracktionLine">
+            <summary>
+获取或设置一个值，用以指示标签是否显示引线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.IsSizeFixed">
+            <summary>
+获取或设置一个值，用以指示标签的大小是否固定
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.Offset">
+            <summary>
+获取或设置标签的偏移
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.MaxVisibleDistance">
+            <summary>
+获取或设置标签的最大可见距离
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.MinVisibleDistance">
+            <summary>
+获取或设置标签的最小可见距离
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.TextMarginY">
+            <summary>
+获取或设置标签的Y方向偏移
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.TextMarginX">
+            <summary>
+获取或设置标签的X方向偏移
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.Opaque">
+            <summary>
+获取或设置标签的不透明度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.BackFillEffect">
+            <summary>
+获取或设置标签的背景填充效果
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.BackGranularity">
+            <summary>
+获取或设置标签的背景间隔尺寸
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.BackEndColor">
+            <summary>
+获取或设置标签的渐变效果的结束颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.BackMidColor">
+            <summary>
+获取或设置标签的渐变效果的中间颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.BackBeginColor">
+            <summary>
+获取或设置标签的渐变效果的开始颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.OutlineColor">
+            <summary>
+获取或设置标签的边框颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.OutlineWidth">
+            <summary>
+获取或设置标签的边框粗细
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.TracktionLineWidth">
+            <summary>
+获取或设置标签的引线粗细
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.TractionLineEndPos">
+            <summary>
+获取或设置标签的偏移
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.TracktionLineType">
+            <summary>
+获取或设置标签的引线类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLabelStyle.TractionLineColor">
+            <summary>
+获取或设置标签的引线颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOLabelStyle">
+            <summary>
+标签风格
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.EnumLabelBackEffect">
+            <summary>
+标签背景效果
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.EnumTracktionLineType">
+            <summary>
+枚举值，标签引线类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Scale">
+            <summary>
+获取或设置文本字体的缩放比例
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.ItalicAngle">
+            <summary>
+获取或设置文本字体的倾斜角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Weight">
+            <summary>
+获取或设置文本字体的粗细
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Underline">
+            <summary>
+获取或设置一个值，用以指示文本字体的是否加下划线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Strikeout">
+            <summary>
+获取或设置一个值，用以指示文本字体的是否加删除线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Shadow">
+            <summary>
+获取或设置一个值，用以指示文本字体的是否显示阴影
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Rotation">
+            <summary>
+获取或设置文本字体的旋转
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Outline">
+            <summary>
+获取或设置一个值，用以指示文本字体是否显示轮廓线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Italic">
+            <summary>
+获取或设置一个值，用以指示文本字体是否使用斜体
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.FontWidth">
+            <summary>
+获取或设置文本字体宽度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.FontName">
+            <summary>
+获取或设置文本字体
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.FontSize">
+            <summary>
+获取或设置文本字体大小
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.FontHeight">
+            <summary>
+获取或设置文本字体高度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.IsSizeFixed">
+            <summary>
+获取或设置文本前景色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.ForeColor">
+            <summary>
+获取或设置文本前景色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Bold">
+            <summary>
+获取或设置一个值，用以指示文本是否加粗
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.BackColor">
+            <summary>
+获取或设置文本的背景颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOTextStyle.Alignment">
+            <summary>
+获取或设置问的你的对齐方式
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOTextStyle">
+            <summary>
+文本风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBBox.Equals(System.Object)">
+            <summary>
+判断包围盒是否与另一对象是同一对象
+</summary>
+            <param name="bbox">对象</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBBox.Union(GeoScene.Data.GSOGeoBBox)">
+            <summary>
+合并包围盒
+</summary>
+            <param name="bbox">包围盒</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBBox.Equals(GeoScene.Data.GSOGeoBBox)">
+            <summary>
+判断包围盒是否与另一包围盒是同一包围盒
+</summary>
+            <param name="bbox">包围盒</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBBox.Contains(System.Double,System.Double,System.Double)">
+            <summary>
+判断包围盒是否包含某一点
+</summary>
+            <param name="x">点的X坐标</param>
+            <param name="y">点的Y坐标</param>
+            <param name="z">点的Z坐标</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBBox.Contains(GeoScene.Data.GSOGeoBBox)">
+            <summary>
+判断包围盒是否包含另一包围盒
+</summary>
+            <param name="bbox">包围盒</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBBox.Contains(GeoScene.Data.GSOPoint3d)">
+            <summary>
+判断包围盒是否包含某一点
+</summary>
+            <param name="pt">点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoBBox.IsEmpty">
+            <summary>
+判断包围盒是否为空
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.Center2d">
+            <summary>
+获取包围盒的中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.Center">
+            <summary>
+获取包围盒的中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.BottomCenter">
+            <summary>
+获取包围盒的底部中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.TopCenter">
+            <summary>
+获取包围盒的顶部中心点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.Bounds">
+            <summary>
+获取或设置包围盒的边界
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.MaxZ">
+            <summary>
+获取或设置包围盒的最大Z坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.MinZ">
+            <summary>
+获取或设置包围盒的最小Z坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.MaxY">
+            <summary>
+获取或设置包围盒的最大Y坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.MinY">
+            <summary>
+获取或设置包围盒的最小Y坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.MaxX">
+            <summary>
+获取或设置包围盒的最大X坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoBBox.MinX">
+            <summary>
+获取或设置包围盒的最小X坐标
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoBBox">
+            <summary>
+包围盒
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFeature.ID">
+            <summary>
+要素的ID[Out]
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFeature.Type">
+            <summary>
+要素的类型[Out]
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSORoute.InsertAt(System.Int32,System.ValueType!GeoScene.Data.GSORoutePoint!System.Runtime.CompilerServices.IsBoxed)">
+            <summary>
+在路线上指定位置添加节点
+</summary>
+            <param name="nIndex">指定要添加点的位置</param>
+            <param name="point">要添加的点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSORoute.RemoveAll">
+            <summary>
+移除路线中的所有点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSORoute.RemoveAt(System.Int32)">
+            <summary>
+在路线上删除点
+</summary>
+            <param name="nIndex">要删除点的索引</param>
+        </member>
+        <member name="M:GeoScene.Data.GSORoute.Add(System.Double,System.Double,System.Double)">
+            <summary>
+在路线上添加点
+</summary>
+            <param name="x">要添加点的X坐标</param>
+            <param name="y">要添加点的Y坐标</param>
+            <param name="z">要添加点的Z坐标</param>
+        </member>
+        <member name="M:GeoScene.Data.GSORoute.AddRoutePoint(System.ValueType!GeoScene.Data.GSORoutePoint!System.Runtime.CompilerServices.IsBoxed)">
+            <summary>
+在路线上路线节点
+</summary>
+            <param name="point">要添加的点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSORoute.Add(System.ValueType!GeoScene.Data.GSOPoint3d!System.Runtime.CompilerServices.IsBoxed)">
+            <summary>
+在路线上添加点
+</summary>
+            <param name="point">要添加的点</param>
+        </member>
+        <member name="P:GeoScene.Data.GSORoute.RotateSpeed">
+            <summary>
+沿线运动拐弯速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORoute.SpeedAcceleration">
+            <summary>
+沿线运动加速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORoute.Speed">
+            <summary>
+沿线运动速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORoute.Count">
+            <summary>
+路线中节点的个数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORoute.AltitudeMode">
+            <summary>
+获取或设置路线的高度模式
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORoute.Item(System.Int32)">
+            <summary>
+根据索引获取或设置路线中的点
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSORoute">
+            <summary>
+路线
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLight.LightOn">
+            <summary>
+获取或设置一个值，用以指示光照是否打开
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLight.Specular">
+            <summary>
+获取或设置光照镜面光颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLight.Diffuse">
+            <summary>
+获取或设置光照反射光颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLight.Ambient">
+            <summary>
+获取或设置光照环境光颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLight.Position">
+            <summary>
+获取或设置光照位置
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLight.LightType">
+            <summary>
+获取或设置光照类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLight.LightMode">
+            <summary>
+获取或设置光照模式
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOLight">
+            <summary>
+光照
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.EnumLightType">
+            <summary>
+光照类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.EnumLightMode">
+            <summary>
+光照模式
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOMemoryLayer">
+            <summary>
+三维控件的记忆图层
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLayer.HighLightStyle">
+            <summary>
+获取或设置几何体高亮风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLayer.ExtrudeStyle">
+            <summary>
+获取或设置几何体拉伸风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLayer.Style">
+            <summary>
+获取或设置几何体风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLayer.StyleID">
+            <summary>
+获取或设置几何体风格ID
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOSphereParticleEmitter.Clone">
+            <summary>
+复制发射器
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOSphereParticleEmitter">
+            <summary>
+球形发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSORingParticleEmitter.Clone">
+            <summary>
+复制发射器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORingParticleEmitter.EndAngle">
+            <summary>
+发射器区域终止角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORingParticleEmitter.StartAngle">
+            <summary>
+发射器区域起始角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORingParticleEmitter.InnerRadius">
+            <summary>
+发射器区域内半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORingParticleEmitter.OuterRadius">
+            <summary>
+发射器区域外半径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSORingParticleEmitter">
+            <summary>
+环形发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOBoxParticleEmitter.Clone">
+            <summary>
+复制发射器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOBoxParticleEmitter.Height">
+            <summary>
+发射器区域高
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOBoxParticleEmitter">
+            <summary>
+盒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSORectParticleEmitter.Clone">
+            <summary>
+复制发射器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORectParticleEmitter.Width">
+            <summary>
+发射器区域宽
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORectParticleEmitter.Length">
+            <summary>
+发射器区域长
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSORectParticleEmitter">
+            <summary>
+矩形发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPointParticleEmitter.Clone">
+            <summary>
+复制发射器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPointParticleEmitter.Position">
+            <summary>
+发射器位置
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPointParticleEmitter">
+            <summary>
+点发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.Copy(GeoScene.Data.GSOParticleEmitter)">
+            <summary>
+拷贝几何体
+</summary>
+            <param name="geometry">要重复的几何体</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.Clone">
+            <summary>
+复制几何体
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.GetEffectorCount">
+            <summary>
+得到效果器数目
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.GetEffectorByName(System.String)">
+            <summary>
+根据名称获得一个效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.GetEffectorAt(System.Int32)">
+            <summary>
+根据序号获得一个效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.RemoveAllEffectors">
+            <summary>
+移除所有效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.RemoveEffectorAt(System.Int32)">
+            <summary>
+根据序号移除一个效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.RemoveEffectorByName(System.String)">
+            <summary>
+根据名称移除一个效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.InsertEffectorAt(System.Int32,GeoScene.Data.GSOParticleEffector)">
+            <summary>
+插入一个效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.AddEffector(GeoScene.Data.GSOParticleEffector)">
+            <summary>
+添加一个效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.AddToRndColorTable(System.Drawing.Color)">
+            <summary>
+向随即颜色表中添加颜色
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.SetSizeRnd(System.Single,System.Single)">
+            <summary>
+设置初始粒子大小变化范围，对应属性SizeRnd
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEmitter.SetSizeFix(System.Single,System.Single)">
+            <summary>
+设置初始粒子大小，对应属性SizeFix
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.BillboardType">
+            <summary>
+粒子Billboard类型，默认是始终面向眼睛
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.IsUseRndColorTable">
+            <summary>
+粒子颜色是否从随即颜色表中产生
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.IsRndColorPart">
+            <summary>
+粒子颜色是否从每个分量随即产生
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.IsParticleIndepend">
+            <summary>
+粒子是否独立于发射器，默认是独立于发射器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.IsLumAdded">
+            <summary>
+粒子亮度是否叠加,默认是叠加
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.EndEmitTime">
+            <summary>
+发射器终止发射粒子的时间（从动画开始播放起算）,默认为负数，表示不限制
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.StartEmitTime">
+            <summary>
+发射器开始发射粒子的时间（从动画开始播放起算）,默认为0
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.GravityAcc">
+            <summary>
+重力加速度，默认为0，即重力不起作用
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.EmitPerSec">
+            <summary>
+每秒发射的粒子数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.MaxCount">
+            <summary>
+粒子最大限制个数，默认为负数，表示不限制
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.InitCount">
+            <summary>
+粒子初始个数,默认为0
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.ColorRndEnd">
+            <summary>
+粒子初始颜色变化值终止
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.ColorRndStart">
+            <summary>
+粒子初始颜色变化值得起始范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.EmitScale">
+            <summary>
+发射器区域缩放值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.EmitRotation">
+            <summary>
+发射器旋转角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.SizeRnd">
+            <summary>
+粒子大小变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.SizeFix">
+            <summary>
+粒子大小
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.LifeRnd">
+            <summary>
+粒子生命值变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.LifeFix">
+            <summary>
+粒子生命值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.RotVelRnd">
+            <summary>
+粒子初始旋转速度变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.RotVelFix">
+            <summary>
+粒子初始旋转速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.RotRnd">
+            <summary>
+粒子初始旋转角度变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.RotFix">
+            <summary>
+粒子初始旋转角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.AngleXYRnd">
+            <summary>
+发射器方向角变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.AngleXYFix">
+            <summary>
+发射器方向角
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.AngleXZRnd">
+            <summary>
+发射器高度变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.AngleXZFix">
+            <summary>
+发射器高度角
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.AccRnd">
+            <summary>
+发射器初始加速度变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.AccFix">
+            <summary>
+发射器初始加速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.VelRnd">
+            <summary>
+发射器初始速度变化范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.VelFix">
+            <summary>
+发射器初始速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.Name">
+            <summary>
+发射器名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.TexturePath">
+            <summary>
+获取或设置粒子图片
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEmitter.Type">
+            <summary>
+枚举值发射器类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOParticleEmitter">
+            <summary>
+ 粒子发射器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSODeflectorPlaneParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODeflectorPlaneParticleEffector.Bounce">
+            <summary>
+反射比例
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODeflectorPlaneParticleEffector.PlaneNormal">
+            <summary>
+反射面法线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSODeflectorPlaneParticleEffector.PlanePoint">
+            <summary>
+反射面上一个点
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSODeflectorPlaneParticleEffector">
+            <summary>
+镜面反射效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPathParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPathParticleEffector">
+            <summary>
+旋转效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOCentripParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOCentripParticleEffector">
+            <summary>
+旋转效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOMoveParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOMoveParticleEffector.SetAcceleration(System.Single,System.Single)">
+            <summary>
+将起始和终止加速度设置为不同一个值
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOMoveParticleEffector.SetAcceleration(System.Single)">
+            <summary>
+将起始和终止加速度设置为同一个值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOMoveParticleEffector.AngleXY">
+            <summary>
+加速度方向的方向角
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOMoveParticleEffector.AngleXZ">
+            <summary>
+加速度方向的高度角
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOMoveParticleEffector.EndAcceleration">
+            <summary>
+加速度终止值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOMoveParticleEffector.StartAcceleration">
+            <summary>
+加速度起始值
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOMoveParticleEffector">
+            <summary>
+运动效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSORotParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSORotParticleEffector.Rotation">
+            <summary>
+获取或设置一个值，旋转值
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSORotParticleEffector">
+            <summary>
+旋转效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOIncreaseSizeParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOIncreaseSizeParticleEffector.IncreasePerSecond">
+            <summary>
+缩放值
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOIncreaseSizeParticleEffector">
+            <summary>
+缩放效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOScaleParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOScaleParticleEffector.Scale">
+            <summary>
+缩放值
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOScaleParticleEffector">
+            <summary>
+缩放效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOColorParticleEffector.Clone">
+            <summary>
+复制效果器
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOColorParticleEffector.ColorChanged">
+            <summary>
+颜色改变值
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOColorParticleEffector">
+            <summary>
+颜色变化效果器
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEffector.Copy(GeoScene.Data.GSOParticleEffector)">
+            <summary>
+拷贝几何体
+</summary>
+            <param name="geometry">要重复的几何体</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOParticleEffector.Clone">
+            <summary>
+复制几何体
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEffector.EndTimeType">
+            <summary>
+结束效果的时间的类型，相对出生时间、百分比，还是相对死亡的时间、百分比,默认是相对出生的时间（秒）
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEffector.StartTimeType">
+            <summary>
+开始生效的时间的类型，相对出生时间、百分比，还是相对死亡的时间、百分比,默认是相对出生的时间（秒）
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEffector.EndTime">
+            <summary>
+结束效果的时间，参考粒子生命周期
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEffector.StartTime">
+            <summary>
+开始生效的时间，参考粒子生命周期
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEffector.Name">
+            <summary>
+效果器名称
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOParticleEffector.Type">
+            <summary>
+枚举值效果器类型
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOParticleEffector">
+            <summary>
+喷泉
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPolygonStyle3D.Clone">
+            <summary>
+复制多边形
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPolygonStyle3D.OutlineStyle">
+            <summary>
+获取或设置多边形轮廓线风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPolygonStyle3D.Fill">
+            <summary>
+获取或设置一个值，用以指示多边形是否填充
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPolygonStyle3D.OutLineVisible">
+            <summary>
+获取或设置一个值，用以指示多边形的轮廓线是否显示
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPolygonStyle3D">
+            <summary>
+多边形风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOEntityStyle3D.Clone">
+            <summary>
+复制样式
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOEntityStyle3D.PolygonMode">
+            <summary>
+枚举值获取或设置实体绘制方式
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOEntityStyle3D.EntityColor">
+            <summary>
+获取或设置实体颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOEntityStyle3D">
+            <summary>
+实体风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOElecLineStyle3D.Clone">
+            <summary>
+复制电力线风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOElecLineStyle3D.Segments">
+            <summary>
+电力线的弧线由许多小线段连接而成，而这个参数就是每个小线段的长度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOElecLineStyle3D.CurveFactor">
+            <summary>
+电力线拐弯处系数
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOElecLineStyle3D">
+            <summary>
+电力线风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPipeLineStyle3D.Clone">
+            <summary>
+复制管线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.TailJointParam">
+            <summary>
+获取或设置管线尾部接头
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.HeadJointParam">
+            <summary>
+获取或设置管线头部接头
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.InsideTextureParam">
+            <summary>
+获取或设置管线的外表面纹理
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.OutsideTextureParam">
+            <summary>
+获取或设置管线的外表面纹理
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.Slice">
+            <summary>
+获取或设置管线截面分段数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.CornerSliceAngle">
+            <summary>
+拐弯的地方两个片段的夹角，夹角越小，拐弯处越平滑，默认为20度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.Thickness">
+            <summary>
+获取或设置管线拐角平滑度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.Radius">
+            <summary>
+获取或设置管线半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeLineStyle3D.LineColor">
+            <summary>
+获取或设置管线颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPipeLineStyle3D">
+            <summary>
+管线风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.TailStyle">
+            <summary>
+获取或设置末端风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.BodyStyle">
+            <summary>
+获取或设置立面风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.ExtrudeField">
+            <summary>
+获取或设置拉伸区域
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.BodyPartVisible">
+            <summary>
+获取或设置一个值，用以指示立面是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.HeadPartVisible">
+            <summary>
+获取或设置一个值，用以指示前端是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.TailPartVisible">
+            <summary>
+获取或设置一个值，用以指示末端是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.ExtrudeValue">
+            <summary>
+获取或设置拉伸值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOExtrudeStyle.ExtrudeType">
+            <summary>
+枚举值，获取或设置拉伸方式
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOExtrudeStyle">
+            <summary>
+拉伸风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOTextureParam.Copy(GeoScene.Data.GSOTextureParam)">
+            <summary>
+拷贝几何体
+</summary>
+            <param name="texparam">要重复的几何体</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOTextureParam.Clone">
+            <summary>
+复制几何体
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOLineStyle3D.Clone">
+            <summary>
+复制线风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLineStyle3D.ArrowStyle">
+            <summary>
+获取或设置箭头风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLineStyle3D.ArrowVisible">
+            <summary>
+获取或设置一个值，用以指示箭头是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLineStyle3D.VertexStyle">
+            <summary>
+获取或设置线的顶点风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOLineStyle3D.VertexVisible">
+            <summary>
+获取或设置一个值，用以指示线的顶点是否可见
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOLineStyle3D">
+            <summary>
+线风格
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPointStyle3D">
+            <summary>
+点风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOStyle3D.UsingBlur">
+            <summary>
+对象具有发光效果
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOStyle3D.UsingBothFace">
+            <summary>
+获取或设置一个值，风格是否启用双面渲染
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOStyle3D.UsingSingleColor">
+            <summary>
+获取或设置一个值，风格是否使用单一颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOStyle3D.UsingLight">
+            <summary>
+获取或设置一个值，风格是否使用光照
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOStyle3D.UsingTexture">
+            <summary>
+获取或设置一个值，风格是是否支持贴图效果
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOStyle3D.UsingDepthTest">
+            <summary>
+获取或设置一个值，风格是否支持深度探测
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOStyle.Clone">
+            <summary>
+复制风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOStyle.Copy(GeoScene.Data.GSOStyle)">
+            <summary>
+拷贝风格
+</summary>
+            <param name="style">要拷贝的风格</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOStyle.SetModified(System.Boolean)">
+            <summary>
+标记风格是否进行了修改
+</summary>
+            <param name="bVal">是否修改</param>
+        </member>
+        <member name="T:GeoScene.Data.GSOStyle">
+            <summary>
+风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.ToArray">
+            <summary>
+节点对象中的节点转换成数组
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.Clear">
+            <summary>
+清空节点对象中的所有节点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.RemoveRange(System.Int32,System.Int32)">
+            <summary>
+删除节点对象中的多个节点
+</summary>
+            <param name="index">要删除的点索引</param>
+            <param name="count">要删除的点个数</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.Remove(System.Int32)">
+            <summary>
+删除节点对象中的某个点
+</summary>
+            <param name="index">要删除的点索引</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.InsertRange(System.Int32,GeoScene.Data.GSOPoint3d[])">
+            <summary>
+添加多个节点到节点对象的指定位置 
+</summary>
+            <param name="index">要添加的位置索引</param>
+            <param name="points">要添加的节点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.Insert(System.Int32,GeoScene.Data.GSOPoint3d)">
+            <summary>
+添加节点到节点对象的指定位置 
+</summary>
+            <param name="index">要添加的位置索引</param>
+            <param name="points">要添加的节点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.AddRange(GeoScene.Data.GSOPoint3d[])">
+            <summary>
+添加多个节点到节点对象中 
+</summary>
+            <param name="points">要添加的节点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.Add(GeoScene.Data.GSOPoint3d)">
+            <summary>
+添加节点到节点对象中 
+</summary>
+            <param name="pt">要添加的节点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3ds.Clone">
+            <summary>
+复制节点 
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPoint3ds.Item(System.Int32)">
+            <summary>
+根据索引值获取或设置节点对象中的节点 
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPoint3ds.Count">
+            <summary>
+节点对象中的点的个数 
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPoint3ds">
+            <summary>
+节点对象 
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFieldAttr.AllowNull">
+            <summary>
+是否允许空值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFieldAttr.DefaultValue">
+            <summary>
+字段默认值
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFieldAttr.Type">
+            <summary>
+字段类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFieldAttr.Precision">
+            <summary>
+字段精度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFieldAttr.Width">
+            <summary>
+字段长度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFieldAttr.Name">
+            <summary>
+字段名称
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOFieldAttr">
+            <summary>
+标签
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeJointParam.JointPointField">
+            <summary>
+接头点字段
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeJointParam.ExtentField">
+            <summary>
+接头延伸字段
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeJointParam.JointRadiusField">
+            <summary>
+接头半径字段
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeJointParam.JointPoint">
+            <summary>
+接头点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeJointParam.JointRadius">
+            <summary>
+接头半径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeJointParam.Extent">
+            <summary>
+缩进或延伸值,0表示不便，正数表示延伸，负数表示缩进
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPipeJointParam.IsDiffRadius">
+            <summary>
+是否变径接头
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPipeJointParam">
+            <summary>
+管线接头参数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.MaxVisibleDistance">
+            <summary>
+获取或设置箭头的最大可见距离
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.MinVisibleDistance">
+            <summary>
+获取或设置箭头的最小可见距离
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.Speed">
+            <summary>
+获取或设置箭头流动速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.TimerInterval">
+            <summary>
+箭头播放的时间间隔
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.DirField">
+            <summary>
+获取或设置一个值，箭头方向字段
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.IsAlongCenter">
+            <summary>
+获取或设置一个值，用以箭头显示时候是否严格沿线中心绘制
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.OutlineVisible">
+            <summary>
+获取或设置一个值，用以箭头显示时候是否显示轮廓
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.IsNegtiveDir">
+            <summary>
+获取或设置一个值，用以箭头方向是否和几何数据方向相反
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.UsingPixelLen">
+            <summary>
+获取或设置一个值，用以箭头显示时候是否启用像素长度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.UsingDepthTest">
+            <summary>
+获取或设置一个值，用以箭头显示时候是否启用深度探测
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.OutlineType">
+            <summary>
+获取或设置轮廓线的类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.OutlineWidth">
+            <summary>
+获取或设置轮廓宽，像素单位
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.IsPlaying">
+            <summary>
+是否正在播放
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.ArrowGap">
+            <summary>
+获取或设置箭头之间间隔，像素单位
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.HeadWidth">
+            <summary>
+获取或设置箭头头部宽，像素单位
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.HeadLen">
+            <summary>
+获取或设置箭头头部长，像素单位
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.BodyWidth">
+            <summary>
+获取或设置箭头身宽，像素单位
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.BodyLen">
+            <summary>
+获取或设置箭头身长，像素单位
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.ArrowShape">
+            <summary>
+获取或设置箭头类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.OutlineColor">
+            <summary>
+获取或设置箭头的边框颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOArrowStyle.ArrowColor">
+            <summary>
+获取或设置箭头的颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOArrowStyle">
+            <summary>
+标签风格
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.EnumArrowShape">
+            <summary>
+枚举值，箭头的形状
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3d.SetValue(System.Double,System.Double,System.Double)">
+            <summary>
+设置点的值
+</summary>
+            <param name="x">X值</param>
+            <param name="y">Y值</param>
+            <param name="z">Z值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint3d.Offset(System.Double,System.Double,System.Double)">
+            <summary>
+设置点的偏移
+</summary>
+            <param name="dx">X轴方向偏移</param>
+            <param name="dy">Y轴方向偏移</param>
+            <param name="dz">Z轴方向偏移</param>
+        </member>
+        <member name="P:GeoScene.Data.GSOPoint3d.Z">
+            <summary>
+点的Z坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPoint3d.Y">
+            <summary>
+点的Y坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPoint3d.X">
+            <summary>
+点的X坐标
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPoint3d">
+            <summary>
+三维点
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint2d.SetValue(System.Double,System.Double)">
+            <summary>
+设置点的值
+</summary>
+            <param name="dx">X值</param>
+            <param name="dy">Y值</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint2d.Offset(System.Double,System.Double)">
+            <summary>
+设置点的偏移
+</summary>
+            <param name="dx">X轴方向偏移</param>
+            <param name="dy">Y轴方向偏移</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint2d.Equals(GeoScene.Data.GSOPoint2d)">
+            <summary>
+判断某一点是不是和另外一点是同一点
+</summary>
+            <param name="pt">要比较的点</param>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint2d.IsZero">
+            <summary>
+判断点的坐标是不是0
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOPoint2d.IsEmpty">
+            <summary>
+判断点是否为空
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPoint2d.Y">
+            <summary>
+获取或设置点的Y坐标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOPoint2d.X">
+            <summary>
+获取或设置点的X坐标
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOPoint2d">
+            <summary>
+二维点
+</summary>
+        </member>
+        <member name="F:GeoScene.Data.EnumTexturePixelFormat.TYPE__R8G8B8A8">
+4 byte pixel format, 1 byte for red, 1 byte for green, 1 byte for blue, and one byte for alpha
+</member>
+        <member name="F:GeoScene.Data.EnumTexturePixelFormat.TYPE__B8G8R8A8">
+4 byte pixel format, 1 byte for blue, 1 byte for green, 1 byte for red and one byte for alpha
+</member>
+        <member name="F:GeoScene.Data.EnumTexturePixelFormat.TYPE_B8G8R8">
+3 byte pixel format, 1 byte for blue, 1 byte for green, 1 byte for red
+</member>
+        <member name="T:GeoScene.Data.EnumDataSourceType">
+            <summary>
+枚举值，数据源类型
+</summary>
+        </member>
+        <member name="F:GSC.GSViewport.m_nZOrder">
+ZOrder
+</member>
+        <member name="M:GSC.GSFile.GetStatus(GSC.GSString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSFile.GSFileStatus*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+\param strFileName 指定的文件名[in]。
+	\param status 得到的状态信息[out]。
+	\return 成功返回true,失败返回false。
+
+</member>
+        <member name="M:GSC.GSFile.Match(GSC.GSString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt32)">
+Match filenames using *, ?, [^a-z], and so on
+</member>
+        <member name="M:GSC.GSTileDataCache.FindTileDataToDrop(GSC.GSTileData*,GSC.GSTileData*)">
+Finds best texture tile to remove from memory.
+
+</member>
+        <member name="M:GSC.GSTileDataCache.Cleanup">
+ Removes unneeded objects from memory.
+
+ Currently removes one texture each call, until number
+ of textures &gt;= DEFAULT_MAX_TEXTURES
+
+ @todo implement tunable limits
+
+</member>
+        <member name="F:GSC.GSGeoFrameAnimation.m_pntProCoordPos">
+导模型时候，对gcm有用
+</member>
+        <member name="F:GSC.GSGeoModel.m_pntProCoordPos">
+导模型时候，对gcm有用
+</member>
+        <member name="M:GSC.GSThread.Dispose">
+Destroy the thread immediately, running or not.
+It is probably better to wait until it is finished, in case
+the thread currently holds mutexes.
+
+</member>
+        <member name="M:GSC.GSThread.policy">
+Get thread scheduling policy.
+
+</member>
+        <member name="M:GSC.GSThread.policy(GSC.GSThread.Policy)">
+Set thread scheduling policy.
+
+</member>
+        <member name="M:GSC.GSThread.priority">
+Return thread scheduling priority.
+
+</member>
+        <member name="M:GSC.GSThread.priority(GSC.GSThread.Priority)">
+Set thread scheduling priority.
+
+</member>
+        <member name="M:GSC.GSThread.current">
+Return thread id of calling thread.
+
+</member>
+        <member name="M:GSC.GSThread.self">
+Return pointer to the GSThread instance associated
+with the calling thread; it returns NULL for the main
+thread and all threads not created by FOX.
+
+</member>
+        <member name="M:GSC.GSThread.wakeat(System.UInt32)">
+Wake at appointed time specified in nanoseconds since Epoch.
+
+</member>
+        <member name="M:GSC.GSThread.sleep(System.UInt32)">
+Make the calling thread sleep for a number of nanoseconds.
+
+</member>
+        <member name="M:GSC.GSThread.time">
+Return time in nanoseconds since Epoch (Jan 1, 1970).
+
+</member>
+        <member name="M:GSC.GSThread.yield">
+Make the thread yield its time quantum.
+
+</member>
+        <member name="M:GSC.GSThread.exit(System.Int32)">
+Exit the calling thread.
+No destructors are invoked for objects on thread's stack;
+to invoke destructors, throw an exception instead.
+
+</member>
+        <member name="M:GSC.GSThread.detach">
+Detach thread, so that a no join() is necessary to harvest the
+resources of this thread.
+
+</member>
+        <member name="M:GSC.GSThread.cancel">
+Cancel the thread, stopping it immediately, running or not.
+If the calling thread is this thread, nothing happens.
+It is probably better to wait until it is finished, in case the
+thread currently holds mutexes.
+
+</member>
+        <member name="M:GSC.GSThread.join(System.Int32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+Suspend calling thread until thread is done, and set code to the
+return value of run() or the argument passed into exit().
+If an exception happened in the thread, return -1.
+
+</member>
+        <member name="M:GSC.GSThread.join">
+Suspend calling thread until thread is done.
+
+</member>
+        <member name="M:GSC.GSThread.start(System.UInt32!System.Runtime.CompilerServices.IsLong)">
+Start thread; the thread is started as attached.
+The thread is given stacksize for its stack; a value of
+zero for stacksize will give it the default stack size.
+
+</member>
+        <member name="M:GSC.GSThread.running">
+Return true if this thread is running.
+
+</member>
+        <member name="M:GSC.GSThread.id">
+Return handle of this thread object.
+This handle is valid in the context of the thread which
+called start().
+
+</member>
+        <member name="M:GSC.GSThread.#ctor">
+Initialize thread object.
+</member>
+        <member name="M:GSC.GSThread.run">
+All threads execute by deriving the run method of GSThread.
+If an uncaught exception was thrown, this function returns -1.
+
+</member>
+        <member name="T:GSC.GSThread.Policy">
+Thread scheduling policies
+</member>
+        <member name="T:GSC.GSThread.Priority">
+Thread priority levels
+</member>
+        <member name="T:GSC.GSThread">
+GSThread provides system-independent support for threads.
+Subclasses must implement the run() function do implement
+the desired functionality of the thread.
+The storage of the GSThread object is to be managed by the
+calling thread, not by the thread itself.
+
+</member>
+        <member name="M:GSC.GSSemaphore.Dispose">
+Delete semaphore
+</member>
+        <member name="M:GSC.GSSemaphore.post">
+Increment semaphore
+</member>
+        <member name="M:GSC.GSSemaphore.trywait">
+Non-blocking semaphore decrement; return true if locked
+</member>
+        <member name="M:GSC.GSSemaphore.wait">
+Decrement semaphore
+</member>
+        <member name="M:GSC.GSSemaphore.#ctor(System.Int32)">
+Initialize semaphore with given count
+</member>
+        <member name="T:GSC.GSSemaphore">
+A semaphore allows for protection of a resource that can
+be accessed by a fixed number of simultaneous threads.
+
+</member>
+        <member name="M:GSC.GSCondition.Dispose">
+Delete the condition
+</member>
+        <member name="M:GSC.GSCondition.broadcast">
+Wake or unblock all blocked threads
+
+</member>
+        <member name="M:GSC.GSCondition.signal">
+Wake or unblock a single blocked thread
+
+</member>
+        <member name="M:GSC.GSCondition.wait(GSC.GSMutex*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt32)">
+Wait until condition becomes signalled, using given mutex,
+which must already have been locked prior to this call.
+Returns true if successful, false if timeout occurred.
+Note that the wait-time is specified in nanoseconds
+since the Epoch (Jan 1, 1970).
+
+</member>
+        <member name="M:GSC.GSCondition.wait(GSC.GSMutex*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+Wait until condition becomes signalled, using given mutex,
+which must already have been locked prior to this call.
+
+</member>
+        <member name="M:GSC.GSCondition.#ctor">
+Initialize the condition
+</member>
+        <member name="T:GSC.GSCondition">
+A condition allows one or more threads to synchronize
+to an event.  When a thread calls wait, the associated
+mutex is unlocked while the thread is blocked.  When the
+condition becomes signaled, the associated mutex is
+locked and the thread(s) are reawakened.
+
+</member>
+        <member name="M:GSC.GSReadWriteLock.Dispose">
+Delete the read/write lock
+</member>
+        <member name="M:GSC.GSReadWriteLock.writeUnlock">
+Unlock write lock
+</member>
+        <member name="M:GSC.GSReadWriteLock.tryWriteLock">
+Try to acquire write lock for read/write lock
+</member>
+        <member name="M:GSC.GSReadWriteLock.writeLock">
+Acquire write lock for read/write lock
+</member>
+        <member name="M:GSC.GSReadWriteLock.readUnlock">
+Unlock read lock
+</member>
+        <member name="M:GSC.GSReadWriteLock.tryReadLock">
+Try to acquire read lock for read/write lock
+</member>
+        <member name="M:GSC.GSReadWriteLock.readLock">
+Acquire read lock for read/write lock
+</member>
+        <member name="M:GSC.GSReadWriteLock.#ctor">
+Initialize the read/write lock
+</member>
+        <member name="T:GSC.GSReadWriteLock">
+A read / write lock allows multiple readers but only a single
+writer.
+
+</member>
+        <member name="M:GSC.GSMutexLock.Dispose">
+Destroy and unlock associated mutex
+</member>
+        <member name="M:GSC.GSMutexLock.unlock">
+Unlock mutex
+</member>
+        <member name="M:GSC.GSMutexLock.locked">
+Return true if mutex is already locked
+</member>
+        <member name="M:GSC.GSMutexLock.trylock">
+Return true if succeeded locking the mutex
+</member>
+        <member name="M:GSC.GSMutexLock.lock">
+Lock mutex
+</member>
+        <member name="M:GSC.GSMutexLock.mutex">
+Return reference to associated mutex
+</member>
+        <member name="T:GSC.GSMutexLock">
+An easy way to establish a correspondence between a C++ scope
+and a critical section is to simply declare an GSMutexLock
+at the beginning of the scope.
+The mutex will be automatically released when the scope is
+left (either by natural means or by means of an exception.
+
+</member>
+        <member name="M:GSC.GSMutex.Dispose">
+Delete the mutex
+</member>
+        <member name="M:GSC.GSMutex.unlock">
+Unlock mutex
+</member>
+        <member name="M:GSC.GSMutex.locked">
+Return true if mutex is already locked
+</member>
+        <member name="M:GSC.GSMutex.trylock">
+Return true if succeeded locking the mutex
+</member>
+        <member name="M:GSC.GSMutex.lock">
+Lock the mutex
+</member>
+        <member name="M:GSC.GSMutex.#ctor(System.Byte)">
+Initialize the mutex
+</member>
+        <member name="T:GSC.GSMutex">
+GSMutex provides a mutex which can be used to enforce critical
+sections around updates of data shared by multiple threads.
+
+</member>
+        <member name="F:GSC.GSGeometry.m_nTimerInterval">
+ 下面的参数用于控制动态对象,动态对象才存储m_nTimerInterval和m_nRepeatCount
+</member>
+        <member name="M:GSC.GSBBox.ComputeMaxScreenLen(GSC.GSVec4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSMatrix4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+\brief 将window坐标换成空间坐标
+\param viewport: x - x, y - y, z - width, w - height 视口
+\param projection 投影矩阵
+\param view 视图矩阵
+\param world 世界矩阵
+</member>
+        <member name="T:GSC.GSVec4f">
+GSVec4f
+</member>
+        <member name="T:GSC.GSVec3f">
+GSVec3f
+</member>
+        <member name="T:GSC.GSVec2f">
+GSVec2f
+</member>
+        <member name="M:GSC.GSCompress.UnZip(System.Byte*,System.UInt32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32)">
+\details 根据C++编码规范,目的参数在前,源参数在后,故而对Sm30中参数的位置和名称做了相应的改动
+	解压缩数据参数说明
+	void *pvDestBuffer: 目标内存区域 ,dwDestLen: 目标内存区域大小
+	const void *pvSrcBuffer: 源数据; GSuint dwSrcLen:源数据长度
+	
+	  目标内存区域需要事先开辟，至少要有 dwSrcLen * 101% + 12,进行解压缩后，
+	  内存的大小会改变，dwDestLen传出改变后的大小;
+	  pvSrcBuffer和pvDestBuffer不能相同
+	  Decompress returns Z_OK if success, Z_MEM_ERROR if there was not
+	  enough memory, Z_BUF_ERROR if there was not enough room in the output
+	  buffer, or Z_DATA_ERROR if the input data was corrupted.
+
+</member>
+        <member name="M:GSC.GSCompress.Zip(System.Byte*,System.UInt32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32,System.Int32)">
+\details 根据C++编码规范,目的参数在前,源参数在后,故而对Sm30中参数的位置和名称做了相应的改动
+	压缩数据参数说明
+	void *pvDestBuffer: 目标内存区域 ,dwDestLen: 目标内存区域大小
+	const void *pvSrcBuffer: 源数据; GSuint dwSrcLen:源数据长度
+	
+	  目标内存区域需要事先开辟，至少要有 dwSrcLen * 1% + 12,	进行压缩后，
+	  内存的大小会改变，dwDestLen 传出改变后的大小;
+	  pvSrcBuffer和pvDestBuffer不能相同
+	  参数GSint nLevel 可以取1到9之间的整数.
+	  nLevel越小，压缩过程中用的内存最少，但是压缩速度慢，压缩率低;
+	  nLevel越大，压缩过程中用的内存最多，但是压缩速度快，压缩率高;
+	  
+		compress returns Z_OK if success, Z_MEM_ERROR if there was not enough
+		memory, Z_BUF_ERROR if there was not enough room in the output buffer,
+		Z_STREAM_ERROR if the level parameter is invalid.
+		compress2 (dest, dwDesLen, source, dwDesLen, level)
+
+</member>
+        <member name="M:GSC.GSMemStream.Load(System.Byte*,System.UInt32)">
+Load arrays of items from stream
+</member>
+        <member name="M:GSC.GSMemStream.op_RightShift(System.Byte*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+Load single items from stream
+</member>
+        <member name="M:GSC.GSMemStream.Save(System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32)">
+Save arrays of items to stream
+</member>
+        <member name="M:GSC.GSMemStream.SetPosition(System.Int64,GSC.GSWhence)">
+\remark		如果要设置的位置超过内存空间大小，且内存由流所有，会导致内存空间重新分配，
+		内存空间不为流所有，则流会处于Full状态
+		\param offset 偏移量[in]。
+		\param whence 偏移量的起始位置[in]。
+
+</member>
+        <member name="M:GSC.GSFStream.Load(System.Byte*,System.UInt32)">
+Load arrays of items from stream
+</member>
+        <member name="M:GSC.GSFStream.op_RightShift(System.Byte*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+Load single items from stream
+</member>
+        <member name="M:GSC.GSFStream.Save(System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32)">
+Save arrays of items to stream
+</member>
+        <member name="M:GSC.GSFStream.op_LeftShift(System.Byte!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+Save single items to stream
+</member>
+        <member name="M:GSC.GSFStream.IsOpen">
+\return 打开状态返回true,关闭状态返回false。
+
+</member>
+        <member name="M:GSC.GSFStream.SetPosition(System.Int64,GSC.GSWhence)">
+\param offset 偏移量[in]。
+		\param whence 起始位置[in]。
+
+</member>
+        <member name="M:GSC.GSFStream.Open(System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte!System.Runtime.CompilerServices.IsConst*,GSC.GSStreamDirection,System.UInt32)">
+\param filename 指定文件名[in]。
+		\param save_or_load 指定打开的方式，只读、只写或读写[in]。
+		\param size 缓存的大小[in]。
+
+</member>
+        <member name="T:GSC.GSStringW">
+\remarks 特别需要注意的是: GSStringW内部采用stl的wstring实现,wstring内部用的是wchar_t*,
+而各个平台上wchar_t的字节长度和字节顺序都是不一样的,例如Windows一般是2字节,LittleEndian;
+Solaris(Sparc)也是2字节,BigEndian; Linux为4字节. 因此,不能认为各个平台同样内容的GSStringW的内部存储是一致的.
+也就是说, GSStringW不能用来保证各个平台上宽字节(Unicode)字符串存储的统一. 这一职能被另外一个类GSStringUCS2LE
+所承担, GSStringUCS2LE保证存取都按照 Windows上的 UCS2,LittleEndian方式进行,以保持各个平台的统一和与SFC数据的兼容.
+GSStringW主要可用来对字符进行拆分.
+
+</member>
+        <member name="M:GSC.GSColor3.GetHSB(System.Double*,System.Double*,System.Double*)">
+Convert the current colour to Hue, Saturation and Brightness values. 
+		@param hue Output hue value, scaled to the [0,1] range as opposed to the 0-360
+		@param saturation Output saturation level, [0,1]
+		@param brightness Output brightness level, [0,1]
+
+</member>
+        <member name="M:GSC.GSColor3.SetHSB(System.Double,System.Double,System.Double)">
+Set a colour value from Hue, Saturation and Brightness.
+		@param hue Hue value, scaled to the [0,1] range as opposed to the 0-360
+		@param saturation Saturation level, [0,1]
+		@param brightness Brightness level, [0,1]
+
+</member>
+        <member name="M:GSC.GSColor3.ptr">
+Pointer accessor for direct copying
+
+Pointer accessor for direct copying
+</member>
+        <member name="M:GSC.GSColor3.op_Subscript(System.Byte)">
+Array accessor operator
+
+Array accessor operator
+</member>
+        <member name="M:GSC.GSColor3.GetNormalizeColor">
+As saturate, except that this colour value is unaffected and
+		the saturated colour value is returned as a copy. 
+</member>
+        <member name="M:GSC.GSColor3.Normalize">
+Clamps colour value to the range [0, 1].
+
+</member>
+        <member name="M:GSC.GSColor3.SetAsABGR(System.UInt32!System.Runtime.CompilerServices.IsConst)">
+Sets colour as ABGR.
+
+</member>
+        <member name="M:GSC.GSColor3.SetAsBGRA(System.UInt32!System.Runtime.CompilerServices.IsConst)">
+Sets colour as BGRA.
+
+</member>
+        <member name="M:GSC.GSColor3.SetAsARGB(System.UInt32!System.Runtime.CompilerServices.IsConst)">
+Sets colour as ARGB.
+
+</member>
+        <member name="M:GSC.GSColor3.SetAsRGBA(System.UInt32!System.Runtime.CompilerServices.IsConst)">
+Sets colour as RGBA.
+
+</member>
+        <member name="M:GSC.GSColor3.GetAsABGR">
+Retrieves colours as ABGR 
+</member>
+        <member name="M:GSC.GSColor3.GetAsBGRA">
+Retrieves colour as BGRA.
+
+</member>
+        <member name="M:GSC.GSColor3.GetAsARGB">
+Retrieves colour as ARGB.
+
+</member>
+        <member name="M:GSC.GSColor3.GetAsRGBA">
+Retrieves colour as RGBA.
+
+</member>
+        <member name="M:GSC.GSGeoBBox.ComputeMaxScreenLen(GSC.GSVec4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSMatrix4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSMatrix4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSMatrix4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+\brief 将window坐标换成空间坐标
+\param viewport: x - x, y - y, z - width, w - height 视口
+\param projection 投影矩阵
+\param view 视图矩阵
+\param world 世界矩阵
+</member>
+        <member name="M:GSC.GSVec3d.UnProject(GSC.GSVec4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSMatrix4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSMatrix4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,GSC.GSMatrix4d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Byte)">
+\brief 将window坐标换成空间坐标
+\param viewport: x - x, y - y, z - width, w - height 视口
+\param projection 投影矩阵
+\param view 视图矩阵
+\param world 世界矩阵
+</member>
+        <member name="M:GSC.GSStream.SetPosition(System.Int64,GSC.GSWhence)">
+对文件流，如果要设置的位置超过原来文件大小，会导致文件长度增加，
+对内存流，如果要设置的位置超过内存空间大小，且内存由流所有，会导致内存空间重新分配，
+	内存空间不为流所有，则流会处于Full状态
+	\param offset 偏移量[in]。
+	\param whence 偏移量的起始位置[in]。
+
+</member>
+        <member name="M:GSC.GSStream.SetError(GSC.GSStreamStatus)">
+\param err 设置的错误类型[in]。
+		\remarks 一般不需要使用。
+
+</member>
+        <member name="M:GSC.GSStream.SetSpace(System.UInt32)">
+\param space 设置的空间大小值[in]。
+		\attention 对内存流，在内存空间不由流所有时调用，会发生Assert错误。
+
+</member>
+        <member name="T:GSC.GSStream">
+\remarks 实例化时，内存流采用GSMemStream，文件流采用GSFStream。
+
+</member>
+        <member name="F:OT_TRIANGLE_FAN">
+A fan of triangles, 3 vertices for the first triangle, and 1 per triangle after that
+</member>
+        <member name="F:OT_TRIANGLE_STRIP">
+A strip of triangles, 3 vertices for the first triangle, and 1 per triangle after that 
+</member>
+        <member name="F:OT_TRIANGLE_LIST">
+A list of triangles, 3 vertices per triangle
+</member>
+        <member name="F:OT_LINE_STRIP">
+A strip of connected lines, 1 vertex per line plus 1 start vertex
+</member>
+        <member name="F:OT_LINE_LIST">
+A list of lines, 2 vertices per line
+</member>
+        <member name="F:OT_POINT_LIST">
+A list of points, 1 vertex per point
+</member>
+        <member name="T:GSC.WaveformType">
+Enumerates the wave types usable with the Ogre engine. 
+</member>
+        <member name="F:WFT_PWM">
+Pulse Width Modulation. Works like WFT_SQUARE, except the high to low transition is controlled by duty cycle. 
+With a duty cycle of 50% (0.5) will give the same output as WFT_SQUARE.
+</member>
+        <member name="F:WFT_INVERSE_SAWTOOTH">
+Gradual steady decrease from max to min over the period, with an instant return to max at the end.
+</member>
+        <member name="F:WFT_SAWTOOTH">
+Gradual steady increase from min to max over the period with an instant return to min at the end.
+</member>
+        <member name="F:WFT_SQUARE">
+Half of the time is spent at the min, half at the max with instant transition between.
+</member>
+        <member name="F:WFT_TRIANGLE">
+An angular wave with a constant increase / decrease speed with pointed peaks.
+</member>
+        <member name="F:WFT_SINE">
+Standard sine wave which smoothly changes from low to high and back again.
+</member>
+        <member name="T:GSC.StencilOperation">
+Enum describing the various actions which can be taken onthe stencil buffer
+</member>
+        <member name="F:SOP_INVERT">
+Invert the bits of the stencil buffer
+</member>
+        <member name="F:SOP_DECREMENT_WRAP">
+Decrease the stencil value by 1, wrapping when decrementing 0
+</member>
+        <member name="F:SOP_INCREMENT_WRAP">
+Increase the stencil value by 1, wrapping back to 0 when incrementing the maximum value
+</member>
+        <member name="F:SOP_DECREMENT">
+Decrease the stencil value by 1, clamping at 0
+</member>
+        <member name="F:SOP_INCREMENT">
+Increase the stencil value by 1, clamping at the maximum value
+</member>
+        <member name="F:SOP_REPLACE">
+Set the stencil value to the reference value
+</member>
+        <member name="F:SOP_ZERO">
+Set the stencil value to zero
+</member>
+        <member name="F:SOP_KEEP">
+Leave the stencil buffer unchanged
+</member>
+        <member name="F:TEXCALC_PROJECTIVE_TEXTURE">
+Projective texture
+</member>
+        <member name="F:TEXCALC_ENVIRONMENT_MAP_PLANAR">
+Environment map based on vertex positions
+</member>
+        <member name="F:TEXCALC_ENVIRONMENT_MAP">
+Environment map based on vertex normals
+</member>
+        <member name="F:TEXCALC_NONE">
+No calculated texture coordinates
+</member>
+        <member name="F:TEX_TYPE_CUBE_MAP">
+3D cube map, used in combination with 3D texture coordinates
+</member>
+        <member name="F:TEX_TYPE_3D">
+3D texture, used in combination with 3D texture coordinates
+</member>
+        <member name="F:TEX_TYPE_2D">
+2D texture, used in combination with 2D texture coordinates (default)
+</member>
+        <member name="F:TEX_TYPE_1D">
+1D texture, used in combination with 1D texture coordinates
+</member>
+        <member name="T:GSC.PolygonFrontFace">
+The broad type of detail for rendering. 
+</member>
+        <member name="F:PFF_CCW">
+Solid polygons are rendered.
+</member>
+        <member name="F:PFF_CW">
+Wireframe models are rendered.
+</member>
+        <member name="F:PFF_NONE">
+Only points are rendered.
+</member>
+        <member name="T:GSC.FogMode">
+Fog modes. 
+</member>
+        <member name="F:FOG_LINEAR">
+Fog density increases linearly between the start and end distances
+</member>
+        <member name="F:FOG_EXP2">
+Fog density increases at the square of FOG_EXP, i.e. even quicker (fog = 1/e^(distance * density)^2)
+</member>
+        <member name="F:FOG_EXP">
+Fog density increases  exponentially from the camera (fog = 1/e^(distance * density))
+</member>
+        <member name="F:FOG_NONE">
+No fog. Duh.
+</member>
+        <member name="F:MRD_SOLID">
+Solid polygons are rendered.
+</member>
+        <member name="F:MRD_WIREFRAME">
+Wireframe models are rendered.
+</member>
+        <member name="F:MRD_POINTS">
+Only points are rendered.
+</member>
+        <member name="T:GSC.PolygonMode">
+The polygon mode to use when rasterising. 
+</member>
+        <member name="F:PM_SOLID">
+Solid polygons are rendered.
+</member>
+        <member name="F:PM_WIREFRAME">
+Wireframe models are rendered.
+</member>
+        <member name="F:PM_POINTS">
+Only points are rendered.
+</member>
+        <member name="T:GSC.CullingMode">
+Hardware culling modes based on vertex winding.
+	This setting applies to how the hardware API culls triangles it is sent. 
+</member>
+        <member name="F:CULL_ANTICLOCKWISE">
+Hardware culls triangles whose vertices are listed anticlockwise in the view.
+</member>
+        <member name="F:CULL_CLOCKWISE">
+Hardware culls triangles whose vertices are listed clockwise in the view (default).
+</member>
+        <member name="F:CULL_NONE">
+Hardware never culls triangles and renders everything it receives.
+</member>
+        <member name="T:GSC.FrameBufferType">
+Defines the frame buffer types. 
+</member>
+        <member name="F:FT_MIP">
+The filter used when determining the mipmap
+</member>
+        <member name="F:FT_MAG">
+The filter used when magnifiying a texture
+</member>
+        <member name="F:FT_MIN">
+The filter used when shrinking a texture
+</member>
+        <member name="T:GSC.FilterOptions">
+Filtering options for textures / mipmaps. 
+</member>
+        <member name="F:FO_ANISOTROPIC">
+Similar to FO_LINEAR, but compensates for the angle of the texture plane
+</member>
+        <member name="F:FO_LINEAR">
+Average of a 2x2 pixel area, denotes bilinear for MIN and MAG, trilinear for MIP
+</member>
+        <member name="F:FO_POINT">
+Use the closest pixel
+</member>
+        <member name="F:FO_NONE">
+No filtering, used for FILT_MIP to turn off mipmapping
+</member>
+        <member name="F:PF_RG8">
+16-bit pixel format, 8 bits red, 8 bits green.
+</member>
+        <member name="F:PF_R8">
+8-bit pixel format, all bits red.
+</member>
+        <member name="F:PF_PVRTC_RGBA4">
+PVRTC (PowerVR) RGBA 4 bpp
+</member>
+        <member name="F:PF_PVRTC_RGB4">
+PVRTC (PowerVR) RGB 4 bpp
+</member>
+        <member name="F:PF_PVRTC_RGBA2">
+PVRTC (PowerVR) RGBA 2 bpp
+</member>
+        <member name="F:PF_PVRTC_RGB2">
+PVRTC (PowerVR) RGB 2 bpp
+</member>
+        <member name="F:PF_DXT5">
+DDS (DirectDraw Surface) DXT5 format
+</member>
+        <member name="F:PF_DXT4">
+DDS (DirectDraw Surface) DXT4 format
+</member>
+        <member name="F:PF_DXT3">
+DDS (DirectDraw Surface) DXT3 format
+</member>
+        <member name="F:PF_DXT2">
+DDS (DirectDraw Surface) DXT2 format
+</member>
+        <member name="F:PF_RGB_DXT1">
+DDS (DirectDraw Surface) DXT1 format
+</member>
+        <member name="F:PF_A2B10G10R10">
+32-bit pixel format, 10 bits for blue, green and red, 2 bits for alpha.
+</member>
+        <member name="F:PF_A2R10G10B10">
+32-bit pixel format, 2 bits for alpha, 10 bits for red, green and blue.
+</member>
+        <member name="F:PF_BYTE_RGBA">
+4 byte pixel format, 1 byte for red, 1 byte for green, 1 byte for blue, and one byte for alpha
+</member>
+        <member name="F:PF_BYTE_BGRA">
+4 byte pixel format, 1 byte for blue, 1 byte for green, 1 byte for red and one byte for alpha
+</member>
+        <member name="F:PF_BYTE_BGR">
+3 byte pixel format, 1 byte for blue, 1 byte for green, 1 byte for red
+</member>
+        <member name="F:PF_BYTE_RGB">
+3 byte pixel format, 1 byte for red, 1 byte for green, 1 byte for blue
+</member>
+        <member name="F:PF_X8B8G8R8">
+32-bit pixel format, 8 bits for blue, 8 bits for green, 8 bits for red
+like PF_A8B8G8R8, but alpha will get discarded
+</member>
+        <member name="F:PF_X8R8G8B8">
+32-bit pixel format, 8 bits for red, 8 bits for green, 8 bits for blue
+like PF_A8R8G8B8, but alpha will get discarded
+</member>
+        <member name="F:PF_R8G8B8A8">
+32-bit pixel format, 8 bits for red, green, blue and alpha.
+</member>
+        <member name="F:PF_B8G8R8A8">
+32-bit pixel format, 8 bits for blue, green, red and alpha.
+</member>
+        <member name="F:PF_A8B8G8R8">
+32-bit pixel format, 8 bits for blue, green, red and alpha.
+</member>
+        <member name="F:PF_A8R8G8B8">
+32-bit pixel format, 8 bits for alpha, red, green and blue.
+</member>
+        <member name="F:PF_B8G8R8">
+24-bit pixel format, 8 bits for blue, green and red.
+</member>
+        <member name="F:PF_R8G8B8">
+24-bit pixel format, 8 bits for red, green and blue.
+</member>
+        <member name="F:PF_A1R5G5B5">
+16-bit pixel format, 5 bits for blue, green, red and 1 for alpha.
+</member>
+        <member name="F:PF_A4R4G4B4">
+16-bit pixel format, 4 bits for alpha, red, green and blue.
+</member>
+        <member name="F:PF_R3G3B2">
+8-bit pixel format, 2 bits blue, 3 bits green, 3 bits red.
+</member>
+        <member name="F:PF_B5G6R5">
+16-bit pixel format, 5 bits red, 6 bits green, 5 bits blue.
+</member>
+        <member name="F:PF_R5G6B5">
+16-bit pixel format, 5 bits red, 6 bits green, 5 bits blue.
+</member>
+        <member name="F:PF_BYTE_LA">
+2 byte pixel format, 1 byte luminance, 1 byte alpha
+</member>
+        <member name="F:PF_A4L4">
+8-bit pixel format, 4 bits alpha, 4 bits luminance.
+</member>
+        <member name="F:PF_A8">
+8-bit pixel format, all bits alpha.
+</member>
+        <member name="F:PF_L16">
+16-bit pixel format, all bits luminance.
+</member>
+        <member name="F:PF_L8">
+8-bit pixel format, all bits luminance.
+</member>
+        <member name="F:PF_UNKNOWN">
+Unknown pixel format.
+</member>
+        <member name="T:GeoScene.Globe.GSOImageLayer">
+            <summary>
+图片图层
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOMath">
+            <summary>
+三维分析
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPie.EndAngle">
+            <summary>
+终止角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoPie.StartAngle">
+            <summary>
+起始角度
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoRectangle.Clone">
+            <summary>
+复制标注
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRectangle.Height">
+            <summary>
+高
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoRectangle.Width">
+            <summary>
+宽
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoDynamicImagePolygon3D.Clone">
+            <summary>
+复制动态标注
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoDynamicImagePolygon3D">
+            <summary>
+动态标注
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoDynamicRoute.Clone">
+            <summary>
+复制运动路线
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoDynamicRoute.Route">
+            <summary>
+获取或设置运动的路线
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoDynamicRoute">
+            <summary>
+运动路线
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoFountain.Clone">
+            <summary>
+获取或设置喷泉
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.DropImage">
+            <summary>
+获取或设置水滴图片
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.AccFactor">
+            <summary>
+获取或设置初始加速度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.AngleOfDeepestStep">
+            <summary>
+获取或设置水柱水平角
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.DropSize">
+            <summary>
+获取或设置水滴大小
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.DropColor">
+            <summary>
+获取或设置水滴颜色
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.DropsPerRay">
+            <summary>
+获取或设置每注水滴数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.RaysPerStep">
+            <summary>
+获取或设置每层水珠数
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFountain.Steps">
+            <summary>
+获取或设置喷泉层数
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoFountain">
+            <summary>
+喷泉
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoGroundOverlay.Clone">
+            <summary>
+复制贴图
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoGroundOverlay.Opaque">
+            <summary>
+贴图不透明度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoGroundOverlay.Rotation">
+            <summary>
+贴图旋转角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoGroundOverlay.Bounds">
+            <summary>
+贴图范围
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoGroundOverlay.FileName">
+            <summary>
+贴图路径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoGroundOverlay">
+            <summary>
+地表贴图
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.MoveTo(System.Int32,System.Int32)">
+            <summary>
+移动图层
+</summary>
+            <param name="nFromIndex">开始索引</param>
+            <param name="nToIndex">结束索引</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.MoveDown(System.Int32)">
+            <summary>
+下移图层
+</summary>
+            <param name="nCurIndex">索引</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.MoveUp(System.Int32)">
+            <summary>
+上移图层
+</summary>
+            <param name="nCurIndex">索引</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.RemoveLayerByID(System.Int32)">
+            <summary>
+根据图层ID移除图层
+</summary>
+            <param name="nID">要移除的图层ID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.RemoveAll">
+            <summary>
+移除所有图层
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.Remove(System.String)">
+            <summary>
+根据图层名称移除图层
+</summary>
+            <param name="layerName">要移除的图层名称</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.Remove(GeoScene.Globe.GSOLayer)">
+            <summary>
+移除图层
+</summary>
+            <param name="layer">要移除的图层</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.Remove(System.Int32)">
+            <summary>
+根据索引移除图层
+</summary>
+            <param name="nIndex">索引</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.Add(GeoScene.Globe.GSOLayer)">
+            <summary>
+添加图层
+</summary>
+            <param name="layer">图层数据</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.Add(GeoScene.Engine.GSODataset)">
+            <summary>
+添加图层
+</summary>
+            <param name="dataset">数据集</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.Add(System.String,System.String)">
+            <summary>
+添加图层
+</summary>
+            <param name="strFilePath">数据路径</param>
+            <param name="strProj4">投影参数</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.Add(System.String)">
+            <summary>
+添加图层
+</summary>
+            <param name="strFilePath">数据路径</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.GetLayerIndexByID(System.Int32)">
+            <summary>
+通过ID来获取图层的Index
+</summary>
+            <param name="nID">ID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOLayers.GetLayerByID(System.Int32)">
+            <summary>
+通过ID来获取图层对象
+</summary>
+            <param name="nID">ID</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLayers.Count">
+            <summary>
+获取三维场景中的图层数
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLayers.default(System.Int32)">
+            <summary>
+通过图层索引值获取图层
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOLayers.Item(System.String)">
+            <summary>
+通过图层名称获取图层
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOLayers">
+            <summary>
+图层
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoArrow.Clone">
+            <summary>
+复制标注
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoArrow">
+            <summary>
+标注
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoFrameAnimation.Clone">
+            <summary>
+复制模型
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoFrameAnimation.SetAnimationFragSpeed(System.Int32,System.Int32)">
+            <summary>
+加载md2模型的坐标信息
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoFrameAnimation.FilePath">
+            <summary>
+模型文件路径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoFrameAnimation">
+            <summary>
+模型对象
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOGlobeControl.InitializeComponent">
+            <summary>
+Required designer variable.
+</summary>
+            <summary>
+Required method for Designer support - do not modify
+the contents of this method with the code editor.
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOGlobeControl.Dispose">
+            <summary>
+Clean up any resources being used.
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoDynamicPoint3D">
+            <summary>
+动态点
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipsePie.EndAngle">
+            <summary>
+终止角度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoEllipsePie.StartAngle">
+            <summary>
+起始角度
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoDynamicMarker.Clone">
+            <summary>
+复制动态标注
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoDynamicMarker">
+            <summary>
+动态标注
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOSimplePolygonStyle3D.Clone">
+            <summary>
+复制多边形风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOSimplePolygonStyle3D.TextureParam">
+            <summary>
+获取或设置表面纹理
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOSimplePolygonStyle3D.FillColor">
+            <summary>
+获取或设置多边形填充颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOSimplePolygonStyle3D">
+            <summary>
+多边形风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOSimpleLineStyle3D.Clone">
+            <summary>
+复制线风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOSimpleLineStyle3D.LineType">
+            <summary>
+获取或设置线的类型
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOSimpleLineStyle3D.LineWidth">
+            <summary>
+获取或设置线的宽度
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOSimpleLineStyle3D.LineColor">
+            <summary>
+获取或设置线颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOSimpleLineStyle3D">
+            <summary>
+线风格
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOModelPointStyle3D">
+            <summary>
+模型点风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOSimplePointStyle3D.Clone">
+            <summary>
+复制点风格
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOSimplePointStyle3D.PointSize">
+            <summary>
+获取或设置点的大小
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOSimplePointStyle3D.PointColor">
+            <summary>
+获取或设置点颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOSimplePointStyle3D">
+            <summary>
+点风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOMarkerStyle3D.Clone">
+            <summary>
+复制标注
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOMarkerStyle3D.IconVisible">
+            <summary>
+获取或设置一个值，用以指示标注图标是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOMarkerStyle3D.TextVisible">
+            <summary>
+获取或设置一个值，用以指示标注文本是否可见
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOMarkerStyle3D.TextStyle">
+            <summary>
+标注文本风格
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOMarkerStyle3D">
+            <summary>
+标注风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOIconPointStyle3D.Clone">
+            <summary>
+复制图标
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOIconPointStyle3D.IconAvoidance">
+            <summary>
+获取或设置一个值，用以指示图标是否无效
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOIconPointStyle3D.FixedSize">
+            <summary>
+获取或设置一个值，用以指示图标是否固定大小
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOIconPointStyle3D.IconPath">
+            <summary>
+获取或设置图标路径
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOIconPointStyle3D.IconScale">
+            <summary>
+获取或设置图标缩放
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOIconPointStyle3D.IconColor">
+            <summary>
+获取或设置图标颜色
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOIconPointStyle3D">
+            <summary>
+图标点风格
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoModel.Clone">
+            <summary>
+复制模型
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeoModel.LoadGCMCoordInfo">
+            <summary>
+加载gcm模型的坐标信息
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOGeoModel.FilePath">
+            <summary>
+模型文件路径
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeoModel">
+            <summary>
+模型对象
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOFeatureFolder.FromKML(System.String)">
+            <summary>
+从Kml文件中读取要素集合
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOFeatureFolder.ToKML">
+            <summary>
+将要素集合保存到Kml文件
+</summary>
+        </member>
+        <member name="P:GeoScene.Data.GSOFeatureFolder.Features">
+            <summary>
+获取要素集合的所有要素
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOFeatureFolder">
+            <summary>
+要素集合
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.MoveTo(System.Int32,System.Int32)">
+            <summary>
+移动地形
+</summary>
+            <param name="nFromIndex">开始索引</param>
+            <param name="nToIndex">结束索引</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.MoveDown(System.Int32)">
+            <summary>
+下移地形
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.MoveUp(System.Int32)">
+            <summary>
+上移地形
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.RemoveAll">
+            <summary>
+移除场景中的所有地形
+</summary>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.Remove(System.Int32)">
+            <summary>
+根据地形Index移除地形
+</summary>
+            <param name="nIndex">地形Index</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.RemoveTerrainByID(System.Int32)">
+            <summary>
+根据地形ID移除地形
+</summary>
+            <param name="nID">地形ID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.Remove(System.String)">
+            <summary>
+根据地形名称移除地形
+</summary>
+            <param name="layerName">地形名称</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.Remove(GeoScene.Globe.GSOTerrain)">
+            <summary>
+移除地形
+</summary>
+            <param name="terrain">要移除的地形</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.Add(GeoScene.Globe.GSOTerrain)">
+            <summary>
+添加地形
+</summary>
+            <param name="terrain">地形数据</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.Add(GeoScene.Engine.GSODataset)">
+            <summary>
+添加地形
+</summary>
+            <param name="dataset">地形数据集</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.Add(System.String)">
+            <summary>
+添加地形
+</summary>
+            <param name="strFilePath">地形数据路径</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.GetTerrainByCaption(System.String)">
+            <summary>
+通过地形标题获取地形
+</summary>
+            <param name="strCaption">地形标题</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.GetTerrainIndexByID(System.Int32)">
+            <summary>
+通过地形ID获取地形Index
+</summary>
+            <param name="nID">地形ID</param>
+        </member>
+        <member name="M:GeoScene.Globe.GSOTerrains.GetTerrainByID(System.Int32)">
+            <summary>
+通过地形ID获取地形
+</summary>
+            <param name="nID">地形ID</param>
+        </member>
+        <member name="P:GeoScene.Globe.GSOTerrains.Count">
+            <summary>
+三维场景中所加载的地形数
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOTerrains.default(System.Int32)">
+            <summary>
+通过地形索引获取地形
+</summary>
+        </member>
+        <member name="P:GeoScene.Globe.GSOTerrains.Item(System.String)">
+            <summary>
+通过地形名称获取地形
+</summary>
+        </member>
+        <member name="T:GeoScene.Globe.GSOTerrains">
+            <summary>
+地形
+</summary>
+        </member>
+        <member name="M:GeoScene.Data.GSOGeometryPointStyle3D.Clone">
+            <summary>
+复制点的样式
+</summary>
+        </member>
+        <member name="T:GeoScene.Data.GSOGeometryPointStyle3D">
+            <summary>
+点的样式
+</summary>
+        </member>
+        <!-- Discarding badly formed XML document comment for member 'T:GSC.GSStringUCS2LE'. -->
+        <!-- Discarding badly formed XML document comment for member 'T:GSC.GSFStream'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GSC.GSUtility.AdjustXmlString(GSC.GSString,System.Int32)'. -->
+        <!-- Discarding badly formed XML document comment for member 'T:GSC.GSMemStream'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GSC.GSMutexLock.#ctor(GSC.GSMutex*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)'. -->
+        <!-- Discarding badly formed XML document comment for member 'P:GeoScene.Data.GSOGeoSphereEntity.Stacks'. -->
+        <!-- Discarding badly formed XML document comment for member 'P:GeoScene.Data.GSOGeoSphereEntity.Slices'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Data.GSOGeoSphereEntity.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Engine.GSODataSource.CreateFeatureDataset(System.String)'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectVisibility.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectMove.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectRot.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectScale.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectTimeChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectStyleChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectExtrudeStyleChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectLabelChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectRoute.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectValueChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectLineGrow.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectClipGrow.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectOpaqueChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectTerrainExtrude.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectCameraStateChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectPlay.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniEffectAudioVolumeChange.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniLayer.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniFeature.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniTerrain.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniScene.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniCamera.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniSun.Clone'. -->
+        <!-- Discarding badly formed XML document comment for member 'M:GeoScene.Globe.GSOAniAudio.Clone'. -->
+    </members>
+</doc>

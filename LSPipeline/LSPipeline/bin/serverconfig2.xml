@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<LocaServer>
+  <IsRecorded>True</IsRecorded>
+  <IP>127.0.0.1</IP>
+  <Port>1500</Port>
+  <UserName>
+  </UserName>
+  <UserPwd>
+  </UserPwd>
+</LocaServer>

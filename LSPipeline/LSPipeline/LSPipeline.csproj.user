@@ -1,0 +1,26 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <StartAction>Project</StartAction>
+    <StartProgram>D:\Program Files\Visual studio 2008\Common7\IDE\devenv.exe</StartProgram>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>
+    </ReferencePath>
+    <PublishUrlHistory>http://localhost/WorldGIS/</PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+  </PropertyGroup>
+</Project>

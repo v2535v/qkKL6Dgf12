@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LocaSpace>
+  <IsRecordedSql>True</IsRecordedSql>
+  <sqlIP>localhost</sqlIP>
+  <database>casic_test_pipe</database>
+  <userName>sa</userName>
+  <password>sa</password>
+</LocaSpace>

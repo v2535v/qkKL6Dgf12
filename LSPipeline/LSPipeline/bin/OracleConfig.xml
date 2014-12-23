@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<OracleConfig>
+  <IsRecorded>True</IsRecorded>
+  <ServerIP>127.0.0.1</ServerIP>
+  <OracleName>orcl</OracleName>
+  <UserName>pipeuser</UserName>
+  <UserPwd>sys</UserPwd>
+</OracleConfig>

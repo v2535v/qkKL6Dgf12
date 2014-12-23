@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml>
+  <Document>
+    <Placemark>
+      <visibility>1</visibility>
+      <LineString>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>
+          99.7356696380087,31.3342705025854,0
+          108.244904884881,31.6348903392335,0
+          112.585638533063,34.1535302301977,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <visibility>1</visibility>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>
+          116.321482759741,39.9346946761637,0
+          116.323015877208,39.932895736979,0
+          116.327055408576,39.9336953343224,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
+

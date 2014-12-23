@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Params>
+<Field label="Handle" type="string">编号</Field>
+<Field label="Code" type="int">管线编码</Field>
+<Field label="Diameter" type="double">管径_毫米</Field>
+<Field label="Material" type="string">材质</Field>
+<Field label="Cable_Type" type="string">电缆型号</Field>
+<Field label="StartPlace" type="string">线路起点</Field>
+<Field label="EndPlace" type="string">线路终点</Field>
+<Field label="D_Type" type="string">埋设方式</Field>
+<Field label="Pressure" type="double">压力</Field>
+<Field label="Voltage" type="double">电压</Field>
+<Field label="Weight" type="double">沟道宽</Field>
+<Field label="Height" type="double">沟道高</Field>
+<Field label="H1" type="double">起始地面高程</Field>
+<Field label="Deep1" type="double">起始埋深</Field>
+<Field label="Top_H1" type="double">起始管顶高程</Field>
+<Field label="Buttom_H1" type="double">起始管底高程</Field>
+<Field label="H2" type="double">终止地面高程</Field>
+<Field label="Deep2" type="double">终止埋深</Field>
+<Field label="Top_H2" type="double">终止管顶高程</Field>
+<Field label="Buttom__H2" type="double">终止管底高程</Field>
+<Field label="Cab_Num" type="int">电缆条数</Field>
+<Field label="Laser_Num" type="int">光缆条数</Field>
+<Field label="Hole_Use" type="int">已用孔数</Field>
+<Field label="Hole_All" type="int">总孔数</Field>
+<Field label="Build_date" type="date">建设年代</Field>
+<Field label="Use_years" type="double">使用年限</Field>
+<Field label="Belong_Com" type="string">权属单位</Field>
+<Field label="Design_Com" type="string">设计单位</Field>
+<Field label="Design_Per" type="string">设计负责人</Field>
+<Field label="Build_Com" type="string">施工单位</Field>
+<Field label="Build_Per" type="string">施工负责人</Field>
+<Field label="Mon_Com" type="string">监理单位</Field>
+<Field label="Mon_Per" type="string">监理负责人</Field>
+<Field label="HH_Per" type="string">业务负责人</Field>
+<Field label="Memo" type="string">备注</Field>
+<Field label="feiqi" type="string">是否废弃</Field>
+<Field label="usetype" type="string">使用类型</Field>
+<Field label="ValveID" type="string">阀门ID</Field>
+<GongJing label="编号" type="string">编号</GongJing>
+<GongJing label="管线点编码" type="double">编码</GongJing>
+<GongJing label="井深" type="double">井深</GongJing>
+<YuBi label="编号" type="string">编号</YuBi>
+<YuBi label="管线点编码" type="double">编码</YuBi>
+<YuBi label="井深" type="double">井深</YuBi>
+<YuBi label="旋转角度" type="double">旋转角度</YuBi>
+<Valve label="编号" type="string">编号</Valve>
+<Valve label="Z坐标" type="double">Z坐标</Valve>
+<Valve label="管线点编码" type="double">编码</Valve>
+
+<Project name="+proj=tmerc +lat_0=0 +lon_0=117 +k=1 +x_0=555484.8092 +y_0=-4114948.631 +ellps=krass +units=m +no_defs" />
+</Params>

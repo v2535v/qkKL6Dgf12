@@ -1,0 +1,1442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C604F35-E4F9-4FA1-B553-203B1FABBD2E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WorldGIS</RootNamespace>
+    <AssemblyName>LSPipeline</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>WorldGIS.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <PublishUrl>http://localhost/WorldGIS/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=8.2.0.2, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL" />
+    <Reference Include="GSBalloonExDotNet, Version=1.0.5406.28797, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="GSGlobeDotNet, Version=1.0.5407.20875, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="GSToolTipDotNet, Version=1.0.5406.28797, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseConnectParams.cs" />
+    <Compile Include="FrmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAboutUs.Designer.cs">
+      <DependentUpon>FrmAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddMultiModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddMultiModel.Designer.cs">
+      <DependentUpon>FrmAddMultiModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseLineProfillAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseLineProfillAnalysis.Designer.cs">
+      <DependentUpon>FrmBaseLineProfillAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckPipelinePoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckPipelinePoint.Designer.cs">
+      <DependentUpon>FrmCheckPipelinePoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageShow.Designer.cs">
+      <DependentUpon>FrmMessageShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateLayerFieldValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateLayerFieldValues.designer.cs">
+      <DependentUpon>FrmUpdateLayerFieldValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlBoxEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlBoxEntityParamPage.designer.cs">
+      <DependentUpon>CtrlBoxEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlCylinderEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlCylinderEntityParamPage.designer.cs">
+      <DependentUpon>CtrlCylinderEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlDataGridView.Designer.cs">
+      <DependentUpon>CtrlDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlEllipCylinderEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlEllipCylinderEntityParamPage.designer.cs">
+      <DependentUpon>CtrlEllipCylinderEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlEllipFrustumEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlEllipFrustumEntityParamPage.designer.cs">
+      <DependentUpon>CtrlEllipFrustumEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlEllipsoidEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlEllipsoidEntityParamPage.designer.cs">
+      <DependentUpon>CtrlEllipsoidEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlEntitySpaceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlEntitySpaceInfo.Designer.cs">
+      <DependentUpon>CtrlEntitySpaceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlEntityStylePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlEntityStylePage.Designer.cs">
+      <DependentUpon>CtrlEntityStylePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlFeatureAttribute.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlFeatureAttribute.Designer.cs">
+      <DependentUpon>CtrlFeatureAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlFountainParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlFountainParamPage.Designer.cs">
+      <DependentUpon>CtrlFountainParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlFrustumEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlFrustumEntityParamPage.designer.cs">
+      <DependentUpon>CtrlFrustumEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineFieldsValuePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineFieldsValuePage.designer.cs">
+      <DependentUpon>CtrlLineFieldsValuePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineStylePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineStylePage.Designer.cs">
+      <DependentUpon>CtrlLineStylePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineStylePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineStylePreview.Designer.cs">
+      <DependentUpon>CtrlLineStylePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlMarkerStylePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlMarkerStylePage.Designer.cs">
+      <DependentUpon>CtrlMarkerStylePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlMarkerTextPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlMarkerTextPage.Designer.cs">
+      <DependentUpon>CtrlMarkerTextPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlGeometryCameraState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlGeometryCameraState.Designer.cs">
+      <DependentUpon>CtrlGeometryCameraState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlParticleParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlParticleParamPage.Designer.cs">
+      <DependentUpon>CtrlParticleParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlSimpleLineStylePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlSimpleLineStylePage.Designer.cs">
+      <DependentUpon>CtrlSimpleLineStylePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlModelPathPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlModelPathPage.Designer.cs">
+      <DependentUpon>CtrlModelPathPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlPoint3DSpaceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlPoint3DSpaceInfo.Designer.cs">
+      <DependentUpon>CtrlPoint3DSpaceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlExtrudePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlExtrudePage.Designer.cs">
+      <DependentUpon>CtrlExtrudePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlPolygonStylePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlPolygonStylePage.Designer.cs">
+      <DependentUpon>CtrlPolygonStylePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlPolylineSpaceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlPolylineSpaceInfo.Designer.cs">
+      <DependentUpon>CtrlPolylineSpaceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlRangeEllipCylinderEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlRangeEllipCylinderEntityParamPage.designer.cs">
+      <DependentUpon>CtrlRangeEllipCylinderEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlRangeEllipFrustumEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlRangeEllipFrustumEntityParamPage.designer.cs">
+      <DependentUpon>CtrlRangeEllipFrustumEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlRangeEllipsoidEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlRangeEllipsoidEntityParamPage.designer.cs">
+      <DependentUpon>CtrlRangeEllipsoidEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlSimpleLineStyleSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlSimpleLineStyleSetting.Designer.cs">
+      <DependentUpon>CtrlSimpleLineStyleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlSphereEntityParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlSphereEntityParamPage.Designer.cs">
+      <DependentUpon>CtrlSphereEntityParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlWaterParamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlWaterParamPage.Designer.cs">
+      <DependentUpon>CtrlWaterParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnalysisDigFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalysisDigFill.Designer.cs">
+      <DependentUpon>FrmAnalysisDigFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTerrainExtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTerrainExtra.Designer.cs">
+      <DependentUpon>FrmTerrainExtra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFloodSubmergeAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFloodSubmergeAnalysis.Designer.cs">
+      <DependentUpon>FrmFloodSubmergeAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetFlyParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetFlyParams.Designer.cs">
+      <DependentUpon>FrmSetFlyParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetPipelineStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPipelineStyle.Designer.cs">
+      <DependentUpon>FrmSetPipelineStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAddLayerFromDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAddLayerFromDB.Designer.cs">
+      <DependentUpon>FrmAddLayerFromDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAddPipeFitting .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAddPipeFitting .Designer.cs">
+      <DependentUpon>FrmAddPipeFitting .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAddWell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAddWell.Designer.cs">
+      <DependentUpon>FrmAddWell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCloneFeatureDatasetStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCloneFeatureDatasetStructure.Designer.cs">
+      <DependentUpon>FrmCloneFeatureDatasetStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMultiPipelineModelDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMultiPipelineModelDB.Designer.cs">
+      <DependentUpon>FrmMultiPipelineModelDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNewDBFeatureDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNewDBFeatureDataset.Designer.cs">
+      <DependentUpon>FrmNewDBFeatureDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCancelLayerjoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCancelLayerjoint.Designer.cs">
+      <DependentUpon>FrmCancelLayerjoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPipelineModelDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPipelineModelDataBase.Designer.cs">
+      <DependentUpon>FrmPipelineModelDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPaiShui2DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPaiShui2DB.Designer.cs">
+      <DependentUpon>FrmPaiShui2DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmShp2KML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmShp2KML.designer.cs">
+      <DependentUpon>FrmShp2KML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFalseEastNorth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFalseEastNorth.Designer.cs">
+      <DependentUpon>FrmFalseEastNorth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddFieldToLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddFieldToLayer.Designer.cs">
+      <DependentUpon>FrmAddFieldToLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreatePipeLineLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreatePipeLineLayer.Designer.cs">
+      <DependentUpon>FrmCreatePipeLineLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateValveLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateValveLayer.Designer.cs">
+      <DependentUpon>FrmCreateValveLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchCreateModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchCreateModel.Designer.cs">
+      <DependentUpon>FrmBatchCreateModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateWellLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateWellLayer.Designer.cs">
+      <DependentUpon>FrmCreateWellLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateYuBiZiLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateYuBiZiLayer.Designer.cs">
+      <DependentUpon>FrmCreateYuBiZiLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdjustLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdjustLayer.Designer.cs">
+      <DependentUpon>FrmAdjustLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetArrowStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetArrowStyle.designer.cs">
+      <DependentUpon>FrmSetArrowStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowAtrributesByTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowAtrributesByTable.Designer.cs">
+      <DependentUpon>FrmShowAtrributesByTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBackupDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackupDatabase.Designer.cs">
+      <DependentUpon>FrmBackupDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchUpadateColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchUpadateColor.Designer.cs">
+      <DependentUpon>FrmBatchUpadateColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchUpdateFieldValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchUpdateFieldValue.Designer.cs">
+      <DependentUpon>FrmBatchUpdateFieldValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetPipelineJointParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPipelineJointParams.Designer.cs">
+      <DependentUpon>FrmSetPipelineJointParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowValvesNeedClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowValvesNeedClose.designer.cs">
+      <DependentUpon>FrmShowValvesNeedClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConnectServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConnectServer.designer.cs">
+      <DependentUpon>FrmConnectServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatabaseParaSettingSqlServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatabaseParaSettingSqlServer.Designer.cs">
+      <DependentUpon>FrmDatabaseParaSettingSqlServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetDateTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetDateTime.Designer.cs">
+      <DependentUpon>FrmSetDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDecjointPipeline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDecjointPipeline.designer.cs">
+      <DependentUpon>FrmDecjointPipeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteFieldFromLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteFieldFromLayer.Designer.cs">
+      <DependentUpon>FrmDeleteFieldFromLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteLines.Designer.cs">
+      <DependentUpon>FrmDeleteLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetDigPit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetDigPit.Designer.cs">
+      <DependentUpon>FrmSetDigPit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmElevateLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmElevateLayer.Designer.cs">
+      <DependentUpon>FrmElevateLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFeatureInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFeatureInfo.Designer.cs">
+      <DependentUpon>FrmFeatureInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnalysisFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalysisFlow.Designer.cs">
+      <DependentUpon>FrmAnalysisFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateGenTopo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateGenTopo.designer.cs">
+      <DependentUpon>FrmCreateGenTopo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLabel.designer.cs">
+      <DependentUpon>FrmLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetLayerVisibleAltitude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetLayerVisibleAltitude.Designer.cs">
+      <DependentUpon>FrmSetLayerVisibleAltitude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetLineStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetLineStyle.Designer.cs">
+      <DependentUpon>FrmSetLineStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLineToPowerLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLineToPowerLine.designer.cs">
+      <DependentUpon>FrmLineToPowerLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMergeLayerLgdAndKml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMergeLayerLgdAndKml.Designer.cs">
+      <DependentUpon>FrmMergeLayerLgdAndKml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutEarth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOutEarth.designer.cs">
+      <DependentUpon>FrmOutEarth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBacthUpdateModelPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBacthUpdateModelPath.Designer.cs">
+      <DependentUpon>FrmBacthUpdateModelPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParticalExportLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParticalExportLayer.Designer.cs">
+      <DependentUpon>FrmParticalExportLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPipelineIndented.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPipelineIndented.Designer.cs">
+      <DependentUpon>FrmPipelineIndented.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPipelineLayerButtjoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPipelineLayerButtjoint.designer.cs">
+      <DependentUpon>FrmPipelineLayerButtjoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchCreatePipeline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchCreatePipeline.Designer.cs">
+      <DependentUpon>FrmBatchCreatePipeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlantTrees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlantTrees.Designer.cs">
+      <DependentUpon>FrmPlantTrees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetPolygonStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPolygonStyle.Designer.cs">
+      <DependentUpon>FrmSetPolygonStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPolygonToWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPolygonToWater.Designer.cs">
+      <DependentUpon>FrmPolygonToWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProject.Designer.cs">
+      <DependentUpon>FrmProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowValveInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowValveInformation.designer.cs">
+      <DependentUpon>FrmShowValveInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnderGroundFloorSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnderGroundFloorSetting.Designer.cs">
+      <DependentUpon>FrmUnderGroundFloorSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateFeatureNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateFeatureNames.Designer.cs">
+      <DependentUpon>FrmUpdateFeatureNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateLayoutColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateLayoutColor.Designer.cs">
+      <DependentUpon>FrmUpdateLayoutColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdatePipelineColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdatePipelineColor.Designer.cs">
+      <DependentUpon>FrmUpdatePipelineColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValiData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmValiData.Designer.cs">
+      <DependentUpon>FrmValiData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCopyFeatureDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCopyFeatureDataset.Designer.cs">
+      <DependentUpon>FrmCopyFeatureDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditLayerAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditLayerAttributes.designer.cs">
+      <DependentUpon>FrmEditLayerAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnalysisHengDuanMian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalysisHengDuanMian.designer.cs">
+      <DependentUpon>FrmAnalysisHengDuanMian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogManager.designer.cs">
+      <DependentUpon>FrmLogManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchUpdatePipelineColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchUpdatePipelineColor.designer.cs">
+      <DependentUpon>FrmBatchUpdatePipelineColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditLayerAttributesByTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditLayerAttributesByTable.designer.cs">
+      <DependentUpon>FrmEditLayerAttributesByTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnionFeatureDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnionFeatureDataset.Designer.cs">
+      <DependentUpon>FrmUnionFeatureDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetGroundOpaque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetGroundOpaque.Designer.cs">
+      <DependentUpon>FrmSetGroundOpaque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OledbHelper.cs" />
+    <Compile Include="FrmAnalysisProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalysisProfile.Designer.cs">
+      <DependentUpon>FrmAnalysisProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAboutUs.resx">
+      <DependentUpon>FrmAboutUs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddMultiModel.resx">
+      <DependentUpon>FrmAddMultiModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseLineProfillAnalysis.resx">
+      <DependentUpon>FrmBaseLineProfillAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckPipelinePoint.resx">
+      <DependentUpon>FrmCheckPipelinePoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageShow.resx">
+      <DependentUpon>FrmMessageShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateLayerFieldValues.resx">
+      <DependentUpon>FrmUpdateLayerFieldValues.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlBoxEntityParamPage.resx">
+      <DependentUpon>CtrlBoxEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlCylinderEntityParamPage.resx">
+      <DependentUpon>CtrlCylinderEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlDataGridView.resx">
+      <DependentUpon>CtrlDataGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlEllipCylinderEntityParamPage.resx">
+      <DependentUpon>CtrlEllipCylinderEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlEllipFrustumEntityParamPage.resx">
+      <DependentUpon>CtrlEllipFrustumEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlEllipsoidEntityParamPage.resx">
+      <DependentUpon>CtrlEllipsoidEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlEntitySpaceInfo.resx">
+      <DependentUpon>CtrlEntitySpaceInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlEntityStylePage.resx">
+      <DependentUpon>CtrlEntityStylePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlFeatureAttribute.resx">
+      <DependentUpon>CtrlFeatureAttribute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlFountainParamPage.resx">
+      <DependentUpon>CtrlFountainParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlFrustumEntityParamPage.resx">
+      <DependentUpon>CtrlFrustumEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlLineFieldsValuePage.resx">
+      <DependentUpon>CtrlLineFieldsValuePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlLineStylePage.resx">
+      <DependentUpon>CtrlLineStylePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlLineStylePreview.resx">
+      <DependentUpon>CtrlLineStylePreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlMarkerStylePage.resx">
+      <DependentUpon>CtrlMarkerStylePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlMarkerTextPage.resx">
+      <DependentUpon>CtrlMarkerTextPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlGeometryCameraState.resx">
+      <DependentUpon>CtrlGeometryCameraState.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlParticleParamPage.resx">
+      <DependentUpon>CtrlParticleParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlSimpleLineStylePage.resx">
+      <DependentUpon>CtrlSimpleLineStylePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlModelPathPage.resx">
+      <DependentUpon>CtrlModelPathPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlPoint3DSpaceInfo.resx">
+      <DependentUpon>CtrlPoint3DSpaceInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlExtrudePage.resx">
+      <DependentUpon>CtrlExtrudePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlPolygonStylePage.resx">
+      <DependentUpon>CtrlPolygonStylePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlPolylineSpaceInfo.resx">
+      <DependentUpon>CtrlPolylineSpaceInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlRangeEllipCylinderEntityParamPage.resx">
+      <DependentUpon>CtrlRangeEllipCylinderEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlRangeEllipFrustumEntityParamPage.resx">
+      <DependentUpon>CtrlRangeEllipFrustumEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlRangeEllipsoidEntityParamPage.resx">
+      <DependentUpon>CtrlRangeEllipsoidEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlSimpleLineStyleSetting.resx">
+      <DependentUpon>CtrlSimpleLineStyleSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlSphereEntityParamPage.resx">
+      <DependentUpon>CtrlSphereEntityParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlWaterParamPage.resx">
+      <DependentUpon>CtrlWaterParamPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnalysisDigFill.resx">
+      <DependentUpon>FrmAnalysisDigFill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTerrainExtra.resx">
+      <DependentUpon>FrmTerrainExtra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFloodSubmergeAnalysis.resx">
+      <DependentUpon>FrmFloodSubmergeAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetFlyParams.resx">
+      <DependentUpon>FrmSetFlyParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPipelineStyle.resx">
+      <DependentUpon>FrmSetPipelineStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAddLayerFromDB.resx">
+      <DependentUpon>FrmAddLayerFromDB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAddPipeFitting .resx">
+      <DependentUpon>FrmAddPipeFitting .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAddWell.resx">
+      <DependentUpon>FrmAddWell.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCloneFeatureDatasetStructure.resx">
+      <DependentUpon>FrmCloneFeatureDatasetStructure.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMultiPipelineModelDB.resx">
+      <DependentUpon>FrmMultiPipelineModelDB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNewDBFeatureDataset.resx">
+      <DependentUpon>FrmNewDBFeatureDataset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCancelLayerjoint.resx">
+      <DependentUpon>FrmCancelLayerjoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPipelineModelDataBase.resx">
+      <DependentUpon>FrmPipelineModelDataBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPaiShui2DB.resx">
+      <DependentUpon>FrmPaiShui2DB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmShp2KML.resx">
+      <DependentUpon>FrmShp2KML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFalseEastNorth.resx">
+      <DependentUpon>FrmFalseEastNorth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddFieldToLayer.resx">
+      <DependentUpon>FrmAddFieldToLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreatePipeLineLayer.resx">
+      <DependentUpon>FrmCreatePipeLineLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateValveLayer.resx">
+      <DependentUpon>FrmCreateValveLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchCreateModel.resx">
+      <DependentUpon>FrmBatchCreateModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateWellLayer.resx">
+      <DependentUpon>FrmCreateWellLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateYuBiZiLayer.resx">
+      <DependentUpon>FrmCreateYuBiZiLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdjustLayer.resx">
+      <DependentUpon>FrmAdjustLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetArrowStyle.resx">
+      <DependentUpon>FrmSetArrowStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowAtrributesByTable.resx">
+      <DependentUpon>FrmShowAtrributesByTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackupDatabase.resx">
+      <DependentUpon>FrmBackupDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchUpadateColor.resx">
+      <DependentUpon>FrmBatchUpadateColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchUpdateFieldValue.resx">
+      <DependentUpon>FrmBatchUpdateFieldValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPipelineJointParams.resx">
+      <DependentUpon>FrmSetPipelineJointParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowValvesNeedClose.resx">
+      <DependentUpon>FrmShowValvesNeedClose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConnectServer.resx">
+      <DependentUpon>FrmConnectServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatabaseParaSettingSqlServer.resx">
+      <DependentUpon>FrmDatabaseParaSettingSqlServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetDateTime.resx">
+      <DependentUpon>FrmSetDateTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDecjointPipeline.resx">
+      <DependentUpon>FrmDecjointPipeline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteFieldFromLayer.resx">
+      <DependentUpon>FrmDeleteFieldFromLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteLines.resx">
+      <DependentUpon>FrmDeleteLines.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetDigPit.resx">
+      <DependentUpon>FrmSetDigPit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmElevateLayer.resx">
+      <DependentUpon>FrmElevateLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFeatureInfo.resx">
+      <DependentUpon>FrmFeatureInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnalysisFlow.resx">
+      <DependentUpon>FrmAnalysisFlow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateGenTopo.resx">
+      <DependentUpon>FrmCreateGenTopo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLabel.resx">
+      <DependentUpon>FrmLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetLayerVisibleAltitude.resx">
+      <DependentUpon>FrmSetLayerVisibleAltitude.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetLineStyle.resx">
+      <DependentUpon>FrmSetLineStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLineToPowerLine.resx">
+      <DependentUpon>FrmLineToPowerLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMergeLayerLgdAndKml.resx">
+      <DependentUpon>FrmMergeLayerLgdAndKml.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOutEarth.resx">
+      <DependentUpon>FrmOutEarth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBacthUpdateModelPath.resx">
+      <DependentUpon>FrmBacthUpdateModelPath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParticalExportLayer.resx">
+      <DependentUpon>FrmParticalExportLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPipelineIndented.resx">
+      <DependentUpon>FrmPipelineIndented.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPipelineLayerButtjoint.resx">
+      <DependentUpon>FrmPipelineLayerButtjoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchCreatePipeline.resx">
+      <DependentUpon>FrmBatchCreatePipeline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlantTrees.resx">
+      <DependentUpon>FrmPlantTrees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPolygonStyle.resx">
+      <DependentUpon>FrmSetPolygonStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPolygonToWater.resx">
+      <DependentUpon>FrmPolygonToWater.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProject.resx">
+      <DependentUpon>FrmProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowValveInformation.resx">
+      <DependentUpon>FrmShowValveInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnderGroundFloorSetting.resx">
+      <DependentUpon>FrmUnderGroundFloorSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateFeatureNames.resx">
+      <DependentUpon>FrmUpdateFeatureNames.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateLayoutColor.resx">
+      <DependentUpon>FrmUpdateLayoutColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdatePipelineColor.resx">
+      <DependentUpon>FrmUpdatePipelineColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmValiData.resx">
+      <DependentUpon>FrmValiData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCopyFeatureDataset.resx">
+      <DependentUpon>FrmCopyFeatureDataset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditLayerAttributes.resx">
+      <DependentUpon>FrmEditLayerAttributes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnalysisHengDuanMian.resx">
+      <DependentUpon>FrmAnalysisHengDuanMian.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogManager.resx">
+      <DependentUpon>FrmLogManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchUpdatePipelineColor.resx">
+      <DependentUpon>FrmBatchUpdatePipelineColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditLayerAttributesByTable.resx">
+      <DependentUpon>FrmEditLayerAttributesByTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnionFeatureDataset.resx">
+      <DependentUpon>FrmUnionFeatureDataset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetGroundOpaque.resx">
+      <DependentUpon>FrmSetGroundOpaque.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnalysisProfile.resx">
+      <DependentUpon>FrmAnalysisProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetSceneLight.resx">
+      <DependentUpon>FrmSetSceneLight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchExportLayerByZ.resx">
+      <DependentUpon>FrmBatchExportLayerByZ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFlyToLatLonPos.resx">
+      <DependentUpon>FrmFlyToLatLonPos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetLayerOpaque.resx">
+      <DependentUpon>FrmSetLayerOpaque.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowSingleModel.resx">
+      <DependentUpon>FrmShowSingleModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetObjectVisibleDistance.resx">
+      <DependentUpon>FrmSetObjectVisibleDistance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetObjectVisiblePixelSize.resx">
+      <DependentUpon>FrmSetObjectVisiblePixelSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPipedrain.resx">
+      <DependentUpon>FrmPipedrain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchCreatePore.resx">
+      <DependentUpon>FrmBatchCreatePore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchCreatePipeDitch.resx">
+      <DependentUpon>FrmBatchCreatePipeDitch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAtrributeMapping1.resx">
+      <DependentUpon>FrmAtrributeMapping1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlLineStyleSetting.resx">
+      <DependentUpon>CtrlLineStyleSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlPipelineStyleSetting.resx">
+      <DependentUpon>CtrlPipelineStyleSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryPipelineBySQL.resx">
+      <DependentUpon>FrmQueryPipelineBySQL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnalysisCollision.resx">
+      <DependentUpon>FrmAnalysisCollision.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowFeatureAttributesByTable.resx">
+      <DependentUpon>FrmShowFeatureAttributesByTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetSelectLevel.resx">
+      <DependentUpon>FrmSetSelectLevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetOutlineStyle.resx">
+      <DependentUpon>FrmSetOutlineStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchUpadateFontOfMarkers.resx">
+      <DependentUpon>FrmBatchUpadateFontOfMarkers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CtrlExtentSectionlineStyleSetting.resx">
+      <DependentUpon>CtrlExtentSectionlineStyleSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatabaseParaSettingOracle.resx">
+      <DependentUpon>FrmDatabaseParaSettingOracle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmSetSceneLight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetSceneLight.Designer.cs">
+      <DependentUpon>FrmSetSceneLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchExportLayerByZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchExportLayerByZ.designer.cs">
+      <DependentUpon>FrmBatchExportLayerByZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFlyToLatLonPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlyToLatLonPos.Designer.cs">
+      <DependentUpon>FrmFlyToLatLonPos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetLayerOpaque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetLayerOpaque.Designer.cs">
+      <DependentUpon>FrmSetLayerOpaque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowSingleModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowSingleModel.Designer.cs">
+      <DependentUpon>FrmShowSingleModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="FrmSetObjectVisibleDistance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetObjectVisibleDistance.Designer.cs">
+      <DependentUpon>FrmSetObjectVisibleDistance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetObjectVisiblePixelSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetObjectVisiblePixelSize.Designer.cs">
+      <DependentUpon>FrmSetObjectVisiblePixelSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPipedrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPipedrain.Designer.cs">
+      <DependentUpon>FrmPipedrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchCreatePore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchCreatePore.Designer.cs">
+      <DependentUpon>FrmBatchCreatePore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchCreatePipeDitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchCreatePipeDitch.Designer.cs">
+      <DependentUpon>FrmBatchCreatePipeDitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAtrributeMapping1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAtrributeMapping1.Designer.cs">
+      <DependentUpon>FrmAtrributeMapping1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineStyleSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlLineStyleSetting.Designer.cs">
+      <DependentUpon>CtrlLineStyleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlPipelineStyleSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlPipelineStyleSetting.Designer.cs">
+      <DependentUpon>CtrlPipelineStyleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryPipelineBySQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryPipelineBySQL.designer.cs">
+      <DependentUpon>FrmQueryPipelineBySQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnalysisCollision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalysisCollision.designer.cs">
+      <DependentUpon>FrmAnalysisCollision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowFeatureAttributesByTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowFeatureAttributesByTable.designer.cs">
+      <DependentUpon>FrmShowFeatureAttributesByTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetSelectLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetSelectLevel.Designer.cs">
+      <DependentUpon>FrmSetSelectLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetOutlineStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetOutlineStyle.Designer.cs">
+      <DependentUpon>FrmSetOutlineStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchUpadateFontOfMarkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchUpadateFontOfMarkers.Designer.cs">
+      <DependentUpon>FrmBatchUpadateFontOfMarkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlExtentSectionlineStyleSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlExtentSectionlineStyleSetting.Designer.cs">
+      <DependentUpon>CtrlExtentSectionlineStyleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatabaseParaSettingOracle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatabaseParaSettingOracle.Designer.cs">
+      <DependentUpon>FrmDatabaseParaSettingOracle.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ranger_station.png" />
+    <None Include="Resources\pin-pl.png" />
+    <Content Include="WorldGIS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
